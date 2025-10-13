@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>講者專屬頁面測試 - DevFest 2025</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    .subtitle {
+      color: #666;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section-title {
+      color: #1a73e8;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      border-bottom: 2px solid #1a73e8;
+      padding-bottom: 0.5rem;
+    }
+
+    .speaker-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .speaker-card {
+      background: #f8f9fa;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 1.5rem;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+
+    .speaker-card:hover {
+      border-color: #1a73e8;
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(26, 115, 232, 0.2);
+    }
+
+    .speaker-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    .speaker-org {
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .speaker-session {
+      color: #1a73e8;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s;
+    }
+
+    .btn-primary {
+      background: #1a73e8;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #1557b0;
+    }
+
+    .btn-secondary {
+      background: #34a853;
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      background: #0f9d58;
+    }
+
+    .info-box {
+      background: #e8f0fe;
+      border-left: 4px solid #1a73e8;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 4px;
+    }
+
+    .info-box h3 {
+      color: #1a73e8;
+      margin-bottom: 0.5rem;
+    }
+
+    .info-box p {
+      color: #333;
+      line-height: 1.6;
+      margin-bottom: 0.5rem;
+    }
+
+    .info-box code {
+      background: white;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+      color: #d32f2f;
+    }
+
+    .quick-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .quick-link-card {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .quick-link-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    }
+
+    .quick-link-card h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+    }
+
+    .quick-link-card p {
+      opacity: 0.9;
+      font-size: 0.9rem;
+    }
+
+    .status {
+      display: inline-block;
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+    }
+
+    .status-ready {
+      background: #34a853;
+      color: white;
+    }
+
+    .status-pending {
+      background: #fbbc04;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎤 講者專屬頁面測試</h1>
+    <p class="subtitle">DevFest Kaohsiung X S. TW Communities Gathering 2025</p>
+
+    <!-- Quick Links -->
+    <div class="section">
+      <h2 class="section-title">快速連結</h2>
+      <div class="quick-links">
+        <a href="/og-image-generator.html" class="quick-link-card">
+          <h3>🎨 OG 圖片生成器</h3>
+          <p>為講者生成社交媒體縮圖</p>
+        </a>
+        <a href="/index.html" class="quick-link-card">
+          <h3>🏠 主網站</h3>
+          <p>返回 DevFest 2025 主頁</p>
+        </a>
+        <a href="/README-SPEAKER-OG-IMAGES.md" class="quick-link-card">
+          <h3>📖 使用文檔</h3>
+          <p>完整的操作指南和常見問題</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Information Box -->
+    <div class="info-box">
+      <h3>✅ 系統已就緒</h3>
+      <p>✓ 已為 <strong id="speakerCount">0</strong> 位講者生成專屬頁面</p>
+      <p>✓ 每個講者都有獨立的 URL 和 Open Graph meta 標籤</p>
+      <p>✓ 點擊下方講者卡片可查看其專屬頁面</p>
+      <p><strong>下一步：</strong>使用 <code>og-image-generator.html</code> 為每位講者生成縮圖</p>
+    </div>
+
+    <!-- Speakers List -->
+    <div class="section">
+      <h2 class="section-title">講者列表</h2>
+      <div id="speakerGrid" class="speaker-grid">
+        <!-- 由 JavaScript 動態生成 -->
+      </div>
+    </div>
+
+    <!-- Testing Tools -->
+    <div class="section">
+      <h2 class="section-title">🧪 測試工具</h2>
+      <div class="info-box" style="border-left-color: #34a853; background: #e6f4ea;">
+        <h3 style="color: #34a853;">社交媒體測試工具</h3>
+        <p>使用以下工具檢查 Open Graph 圖片是否正確顯示：</p>
+        <ul style="margin-left: 1.5rem; line-height: 2;">
+          <li><a href="https://developers.facebook.com/tools/debug/" target="_blank" style="color: #1a73e8;">Facebook Sharing Debugger</a></li>
+          <li><a href="https://cards-dev.twitter.com/validator" target="_blank" style="color: #1a73e8;">Twitter Card Validator</a></li>
+          <li><a href="https://www.linkedin.com/post-inspector/" target="_blank" style="color: #1a73e8;">LinkedIn Post Inspector</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 載入講者資料
+    async function loadSpeakers() {
+      try {
+        const response = await fetch('/data/speakers.json');
+        const data = await response.json();
+        const speakers = data.speakers;
+
+        // 更新講者數量
+        document.getElementById('speakerCount').textContent = speakers.length;
+
+        // 渲染講者卡片
+        const grid = document.getElementById('speakerGrid');
+        speakers.forEach(speaker => {
+          const card = createSpeakerCard(speaker);
+          grid.appendChild(card);
+        });
+      } catch (error) {
+        console.error('Error loading speakers:', error);
+        document.getElementById('speakerGrid').innerHTML = '<p style="color: red;">無法載入講者資料</p>';
+      }
+    }
+
+    // 建立講者卡片
+    function createSpeakerCard(speaker) {
+      const card = document.createElement('div');
+      card.className = 'speaker-card';
+
+      const name = speaker.name.zh || speaker.name.en;
+      const org = speaker.org.zh || speaker.org.en || '未提供組織資訊';
+      const sessionName = speaker.session?.name?.zh || speaker.session?.name?.en || '未提供議程資訊';
+      const speakerId = speaker.id;
+
+      // 檢查 OG 圖片是否存在（這裡只是視覺提示，實際需要伺服器檢查）
+      const hasOgImage = false; // 預設為 false，需要手動生成
+
+      card.innerHTML = `
+        <div class="speaker-name">${name}</div>
+        <div class="speaker-org">${org}</div>
+        <div class="speaker-session">${sessionName}</div>
+        <div style="margin-bottom: 1rem;">
+          <span class="status ${hasOgImage ? 'status-ready' : 'status-pending'}">
+            ${hasOgImage ? '✓ 已有 OG 圖片' : '⚠ 待生成 OG 圖片'}
+          </span>
+        </div>
+        <div class="button-group">
+          <a href="/speakers/${speakerId}/" class="btn btn-primary" target="_blank">
+            查看專屬頁面
+          </a>
+          <a href="/og-image-generator.html" class="btn btn-secondary">
+            生成 OG 圖片
+          </a>
+        </div>
+      `;
+
+      return card;
+    }
+
+    // 初始化
+    loadSpeakers();
+  </script>
+</body>
+</html>
