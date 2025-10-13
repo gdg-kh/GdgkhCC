@@ -40,13 +40,32 @@ This is a static website with no build system. Development workflow:
 # Serve the site locally (required for JSON loading due to CORS)
 python -m http.server 8000
 # or
+npm run serve
+# or
 npx serve .
 
 # Then open http://localhost:8000 in your browser
 ```
 
-**Important**: Due to CORS restrictions, you must use a local server to test the dynamic content features. Opening
-`index.html` directly in a browser will not load the JSON data files.
+**Code Quality Commands**:
+
+```bash
+# Lint JavaScript and HTML files
+npm run lint
+
+# Lint and auto-fix issues
+npm run lint:fix
+
+# Format all code (HTML, CSS, JS, JSON, MD)
+npm run format
+
+# Check formatting without modifying files
+npm run format:check
+```
+
+**Important**:
+- Due to CORS restrictions, you must use a local server to test the dynamic content features. Opening `index.html` directly in a browser will not load the JSON data files.
+- ESLint is configured with Prettier integration - run `npm run lint:fix` and `npm run format` before committing changes.
 
 ## Architecture
 
@@ -80,8 +99,9 @@ npx serve .
 
 4. **Event Information Structure**:
    - Multi-day schedule with track-based organization
-   - Speaker cards with expandable bio sections
-   - Sponsor tier system (gold/silver/bronze)
+   - Speaker cards with expandable bio sections organized by category
+   - Five speaker categories with distinct colors (see `js/dynamic-content.js:221-252`)
+   - Sponsor tier system with partner and company types
    - Tech creation market booth displays
 
 ### Content Management Architecture
@@ -128,8 +148,24 @@ Key color system variables:
 
 - `DynamicContentManager.loadAllData()`: Loads all JSON data files
 - `DynamicContentManager.renderSpeakers()`: Renders speaker cards
+- `DynamicContentManager.enhanceScheduleWithSpeakers()`: Links schedule to speaker data
+- `DynamicContentManager.initHashNavigation()`: Enables URL hash-based navigation to specific items
 - `setLanguage()`: Updates language and re-renders content
 - Navigation event handlers for page switching
+
+## Code Quality
+
+The project uses ESLint and Prettier for code quality:
+
+- **ESLint Config** (`eslint.config.js`): Flat config format with browser globals
+- **HTML Linting**: ESLint plugin for inline JavaScript in HTML files
+- **Prettier Integration**: Ensures consistent formatting across all file types
+- **Key ESLint Rules**:
+  - No `var` declarations (use `const`/`let`)
+  - Prefer template literals over string concatenation
+  - Arrow functions preferred for callbacks
+  - No unused variables (except those prefixed with `_`)
+  - Console statements limited to `warn` and `error`
 
 ## Content Management
 
@@ -146,9 +182,19 @@ Key color system variables:
 - **Staff**: `data/staff.json` - Volunteer and staff information
 - **Markets**: `data/markets.json` - Tech creation market booth information
 - **About**: `data/about.json` - About us and organization information
+- **Carousel**: `data/carousel.json` - Homepage carousel slides
 
-Each JSON file follows a structured format with multi-language support. See `README-DYNAMIC-CONTENT.md` for detailed
-format specifications.
+Each JSON file follows a structured format with multi-language support. See `README-DYNAMIC-CONTENT.md` for detailed format specifications.
+
+### JSON Editor Tool
+
+The project includes a visual JSON editor (`json-editor.html`) for non-technical content management:
+
+- Access at `http://localhost:8000/json-editor.html` (requires local server)
+- Provides tabbed interface for editing all content types
+- Supports file upload for existing JSON data
+- Generates downloadable JSON files
+- No technical knowledge required for content updates
 
 ## Data File Structure
 
@@ -170,6 +216,26 @@ All JSON files follow this pattern:
 ```
 
 Required fields vary by content type but all support multi-language text objects.
+
+## Key Features
+
+### Schedule Enhancement System
+
+The system automatically enhances the event schedule with speaker information (`js/dynamic-content.js:790+`):
+
+- Links schedule items to speaker data via `schedule.session_id` field in speaker JSON
+- Displays speaker photo, name, and organization inline in schedule
+- Shows session tags and expandable abstract
+- Clickable schedule items navigate to full speaker details
+- Mobile: Click to expand/collapse; Desktop: Click to navigate to speaker page
+
+### URL Hash Navigation
+
+Supports direct linking to specific content items (`js/dynamic-content.js:1026+`):
+
+- Format: `#speaker-id`, `#booth-id`, `#sponsor-id`, etc.
+- Automatically switches to correct page and scrolls to item
+- Highlights the target item briefly for user feedback
 
 ## Testing and Development
 
@@ -195,20 +261,30 @@ Required fields vary by content type but all support multi-language text objects
 
 1. Edit `data/speakers.json`
 2. Add speaker photo to `images/` directory
-3. Follow the JSON schema in `README-DYNAMIC-CONTENT.md`
+3. Assign `topic_category` to one of the five predefined categories:
+   - "Gemini AI 的生成式實踐" (Gemini AI in Practice) - Blue
+   - "Google Cloud 的雲端實踐" (Google Cloud in Practice) - Green
+   - "科技向善的實踐之路" (Goodness in Practice) - Yellow
+   - "中午說書人" (Midday Storyteller) - Red
+   - "第二屆 AI 生成大賽" (The 2nd AI Generative Contest) - Black
+4. If linking to schedule, add `schedule.session_id` field matching the schedule item's `data-i18n-key`
+5. Follow the JSON schema in `README-DYNAMIC-CONTENT.md`
 
 ### Adding New Sponsors
 
 1. Edit `data/sponsors.json`
 2. Add sponsor logo to `images/` directory
-3. Specify tier (gold/silver/bronze) for proper styling
+3. Specify `type` (company/partner) and `category` for proper styling
 
 ### Modifying Event Schedule
 
 - Edit the schedule translations in `js/main.js`
-- Schedule is currently static but could be moved to JSON system
+- To link a speaker to a schedule item, ensure the speaker's `schedule.session_id` matches the schedule's `data-i18n-key`
+- Schedule items with matching speakers will automatically display speaker info and become clickable
 
 ### Multi-language Content
 
-- All new content must include zh, en, and ja language variants
+- All new content must include zh, en, and ja language variants (zh-Hant in `main.js`, zh in JSON files)
 - Use the `DynamicContentManager.getText()` method for consistent language handling
+- Language codes: `zh-Hant` (Traditional Chinese), `en` (English), `ja` (Japanese)
+- In JSON files, use `zh`, `en`, `ja` as keys
