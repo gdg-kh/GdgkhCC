@@ -3193,6 +3193,10 @@ html.page-switching {
   border-radius: 8px;
   font-size: 12px;
   transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }
 
 .social-link:hover {
@@ -3213,7 +3217,8 @@ html.page-switching {
   transition: all 0.2s ease;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  justify-content: center;
+  line-height: 1;
 }
 
 .share-link:hover {
@@ -3335,7 +3340,8 @@ html.page-switching {
   justify-content: flex-start;
 }
 
-.speaker-info .social-link {
+.speaker-info .social-link,
+.speaker-info .share-link {
   font-size: 11px;
   padding: 4px 8px;
   border-radius: 6px;
