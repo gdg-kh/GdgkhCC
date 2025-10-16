@@ -3196,7 +3196,6 @@ html.page-switching {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  line-height: 1;
 }
 
 .social-link:hover {
@@ -3218,7 +3217,6 @@ html.page-switching {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  line-height: 1;
 }
 
 .share-link:hover {
