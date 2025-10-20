@@ -4,16 +4,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a static website for "DevFest Kaohsiung X S. TW Communities Gathering 2025" - a tech conference event. The site
-is built with vanilla HTML, CSS, and JavaScript without any build system or package manager, featuring a modern dynamic
-content management system.
+This is a static website for "DevFest Kaohsiung X S. TW Communities Gathering 2025" - a tech conference event. The site is built with vanilla HTML, CSS, and JavaScript without any build system or package manager, featuring a modern dynamic content management system.
 
 ## Project Structure
 
 ```
 /
 ├── index.html                    # Main HTML file with all page content
-├── admin.html                    # Content management interface (demo)
+├── json-editor.html              # Visual JSON content editor (no technical knowledge required)
+├── og-image-generator.html       # Generated OG image creator tool
 ├── css/
 │   └── style.css                # All styles, Material 3 design system
 ├── js/
@@ -25,11 +24,19 @@ content management system.
 │   ├── sponsors.json            # Sponsor information
 │   ├── community.json           # Community participants
 │   ├── staff.json               # Staff and volunteer information
-│   └── about.json               # About us information
+│   ├── about.json               # About us information
+│   └── carousel.json            # Homepage carousel slides
 ├── images/                      # Event images and assets
+├── speakers/                    # Generated: Individual speaker pages with OG meta tags
+├── sponsors/                    # Generated: Individual sponsor pages with OG meta tags
+├── community/                   # Generated: Individual community pages with OG meta tags
+├── staff/                       # Generated: Individual staff pages with OG meta tags
+├── markets/                     # Generated: Individual market booth pages with OG meta tags
+├── about/                       # Generated: Individual about pages with OG meta tags
+├── generate-*.js                # Node.js scripts for generating individual pages
+├── *-template.html              # HTML templates for generated pages
 ├── favicon.svg                  # Site favicon
-├── README-DYNAMIC-CONTENT.md    # Dynamic content system documentation
-└── test-*.html                  # Development test files
+└── README-DYNAMIC-CONTENT.md    # Dynamic content system documentation
 ```
 
 ## Development Commands
@@ -63,10 +70,42 @@ npm run format
 npm run format:check
 ```
 
+**Page Generation Commands** (creates individual pages for SEO and social sharing):
+
+```bash
+# Generate individual speaker pages with dynamic OG meta tags
+npm run generate:speakers
+
+# Generate OG images for speakers (opens browser tool)
+npm run generate:speaker-og-images
+
+# Generate individual sponsor pages
+npm run generate:sponsors
+
+# Generate OG images for sponsors
+npm run generate:sponsor-og-images
+
+# Generate individual community pages
+npm run generate:community
+
+# Generate individual staff pages
+npm run generate:staff
+
+# Generate individual market booth pages
+npm run generate:markets
+
+# Generate individual about pages
+npm run generate:about
+
+# Generate all pages at once
+npm run generate:all
+```
+
 **Important**:
 
 - Due to CORS restrictions, you must use a local server to test the dynamic content features. Opening `index.html` directly in a browser will not load the JSON data files.
 - ESLint is configured with Prettier integration - run `npm run lint:fix` and `npm run format` before committing changes.
+- Generated pages in `speakers/`, `sponsors/`, etc. are created from templates and should not be edited manually. Edit the JSON data files and templates instead, then regenerate.
 
 ## Architecture
 
@@ -77,6 +116,7 @@ npm run format:check
 - **Material Design 3**: Uses Google's Material Web Components and expressive color system
 - **Responsive Design**: Mobile-first approach with hamburger navigation
 - **Dynamic Content Management**: JSON-based content system for speakers, sponsors, and other dynamic data
+- **Static Page Generation**: Node.js scripts generate individual pages from templates for SEO optimization
 
 ### Key Systems
 
@@ -90,6 +130,7 @@ npm run format:check
    - Dynamic text replacement using `data-i18n-key` attributes
    - Language switcher with localStorage persistence
    - Support for zh-Hant, en, and ja languages
+   - **Important**: Language codes differ between `main.js` (uses `zh-Hant`) and JSON files (uses `zh`)
 
 3. **Dynamic Content Management** (`js/dynamic-content.js`):
    - `DynamicContentManager` class handles all dynamic content
@@ -98,7 +139,14 @@ npm run format:check
    - Automatic rendering of speakers, sponsors, community booths, etc.
    - Content validation and error handling
 
-4. **Event Information Structure**:
+4. **Static Page Generation System** (`generate-*.js` scripts):
+   - Node.js scripts read JSON data and generate individual HTML pages
+   - Each page uses a template (`*-template.html`) that dynamically loads its data
+   - Pages include proper Open Graph meta tags for social sharing
+   - OG images can be generated using browser-based canvas tools
+   - Generated pages provide SEO benefits and shareable URLs
+
+5. **Event Information Structure**:
    - Multi-day schedule with track-based organization
    - Speaker cards with expandable bio sections organized by category
    - Five speaker categories with distinct colors (see `js/dynamic-content.js:221-252`)
@@ -147,12 +195,22 @@ Key color system variables:
 
 ### Critical Functions
 
-- `DynamicContentManager.loadAllData()`: Loads all JSON data files
-- `DynamicContentManager.renderSpeakers()`: Renders speaker cards
-- `DynamicContentManager.enhanceScheduleWithSpeakers()`: Links schedule to speaker data
-- `DynamicContentManager.initHashNavigation()`: Enables URL hash-based navigation to specific items
+- `DynamicContentManager.loadAllData()`: Loads all JSON data files (`js/dynamic-content.js:36`)
+- `DynamicContentManager.renderSpeakers()`: Renders speaker cards (`js/dynamic-content.js:214`)
+- `DynamicContentManager.enhanceScheduleWithSpeakers()`: Links schedule to speaker data (`js/dynamic-content.js:790`)
+- `DynamicContentManager.initHashNavigation()`: Enables URL hash-based navigation to specific items (`js/dynamic-content.js:1068`)
 - `setLanguage()`: Updates language and re-renders content
 - Navigation event handlers for page switching
+
+### Page Generation Scripts
+
+Each `generate-*.js` script follows a similar pattern:
+
+1. Reads JSON data from `data/*.json`
+2. Creates a directory for each item (e.g., `speakers/speaker-id/`)
+3. Copies the template file (`*-template.html`) as `index.html` in each directory
+4. Templates dynamically load data from JSON files at runtime
+5. Some scripts also generate OG image creator tools
 
 ## Code Quality
 
@@ -238,23 +296,14 @@ Supports direct linking to specific content items (`js/dynamic-content.js:1026+`
 - Automatically switches to correct page and scrolls to item
 - Highlights the target item briefly for user feedback
 
-## Testing and Development
+### Static Page Generation for SEO
 
-### Test Files
+Individual pages are generated for each content item to improve SEO and social sharing:
 
-- `test-page-switching.html` - Page navigation testing
-- `mobile-test.html` - Mobile responsiveness testing
-- `timeline-alignment-test.html` - Schedule layout testing
-- `unified-card-layout.html` - Card component testing
-- `test-feature.html` - Feature testing
-
-### Development Workflow
-
-1. Use local server for development (required for JSON loading)
-2. Test dynamic content by modifying JSON files
-3. Test responsive design across different screen sizes
-4. Verify multi-language support by switching languages
-5. Check browser console for any loading errors
+- Each item gets its own URL (e.g., `/speakers/speaker-id/`)
+- Pages include proper meta tags for social media preview
+- OG images can be generated using browser-based tools
+- Templates dynamically load data from JSON files, ensuring consistency with main site
 
 ## Common Development Tasks
 
@@ -270,12 +319,15 @@ Supports direct linking to specific content items (`js/dynamic-content.js:1026+`
    - "第二屆 AI 生成大賽" (The 2nd AI Generative Contest) - Black
 4. If linking to schedule, add `schedule.session_id` field matching the schedule item's `data-i18n-key`
 5. Follow the JSON schema in `README-DYNAMIC-CONTENT.md`
+6. Run `npm run generate:speakers` to create individual speaker pages
+7. Optionally generate OG images with `npm run generate:speaker-og-images`
 
 ### Adding New Sponsors
 
 1. Edit `data/sponsors.json`
 2. Add sponsor logo to `images/` directory
 3. Specify `type` (company/partner) and `category` for proper styling
+4. Run `npm run generate:sponsors` to create individual sponsor pages
 
 ### Modifying Event Schedule
 
@@ -289,3 +341,17 @@ Supports direct linking to specific content items (`js/dynamic-content.js:1026+`
 - Use the `DynamicContentManager.getText()` method for consistent language handling
 - Language codes: `zh-Hant` (Traditional Chinese), `en` (English), `ja` (Japanese)
 - In JSON files, use `zh`, `en`, `ja` as keys
+
+### Regenerating Pages After Content Changes
+
+After editing JSON files, regenerate the individual pages:
+
+```bash
+# Regenerate specific content type
+npm run generate:speakers
+
+# Or regenerate everything
+npm run generate:all
+```
+
+This ensures that the individual pages stay in sync with the main site data.
