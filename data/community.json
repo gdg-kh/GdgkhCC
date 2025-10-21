@@ -13,9 +13,15 @@
         "ja": "vLAB Online（台湾ルーティングネットワーク実験センター） は、技術を愛するエンジニアが自発的に設立した技術コミュニティです。初期は Cisco とルーティングネットワーク技術を核として、メンバーの学習と実践を支援するためのオンライン交流および実験環境を提供していました。技術の進化とコミュニティのニーズの変化に伴い、vLAB は討議テーマを徐々に拡大し、サイバーセキュリティ、クラウド、オープンソースツール、AI、デジタルガバナンスなど多様な分野を網羅するようになり、現在は Line グループを中心としたリアルタイム交流プラットフォームへと変貌しました。メンバーは、セキュリティ研究者、ネットワークエンジニア、システムアーキテクト、ITマネージャーなど、様々な業界から集まっており、日々の情報共有と相互扶助の議論を通じて、高い信頼性を持つ知識ネットワークを形成しています。2024年からは「月例ミートアップ計画」を開始し、テーマ講演、読書会、およびソーシャルタイムを組み合わせて、技術的な深みを強化するだけでなく、人脈形成とキャリアの成長を促進しています。vLAB は「共に学び、共に創る」という理念を貫き、急速に変化する技術時代において重要な支点であるとともに、地域社会の技術的自律性とコミュニティのレジリエンスを推進する実験プラットフォームでもあります。"
       },
       "category": {
-        "zh": ["第一天 擺攤社群"],
-        "en": ["Day 1 Community Participation"],
-        "ja": ["1日目 コミュニティへの参加"]
+        "zh": [
+          "第一天 擺攤社群"
+        ],
+        "en": [
+          "Day 1 Community Participation"
+        ],
+        "ja": [
+          "1日目 コミュニティへの参加"
+        ]
       },
       "logo": "images/community-logo-v_lab_online.png",
       "website": "https://linktr.ee/vLabOnline",
@@ -36,9 +42,15 @@
         "ja": "SITCONは「Students’ Information Technology Conference」の略で、2012年に様々なFLOSSコミュニティの学生たちによって発足しました。すべては「学生による、学生のための、学生のカンファレンスを開く」という、一つのシンプルなアイデアから始まりました。2013年以降、SITCONは毎年開催されるカンファレンスとなり、アジア全域から1,000人以上が参加。プログラミング、サイバーセキュリティ、ゲーム開発、オープンソースコミュニティなど、そのセッションは多岐にわたります。SITCONは、オープンソースの世界への登竜門であり、自作プロジェクトや研究成果を発表する晴れの舞台、そして初心者と熟練開発者が出会い、互いに刺激し合う交差点となることを目指しています。<br><br>SITCON 2026は、2026年3月28日に中央研究院人文社会科学館にて盛大に開催されます。"
       },
       "category": {
-        "zh": ["第一天 擺攤社群"],
-        "en": ["Day 1 Community Participation"],
-        "ja": ["1日目 コミュニティへの参加"]
+        "zh": [
+          "第一天 擺攤社群"
+        ],
+        "en": [
+          "Day 1 Community Participation"
+        ],
+        "ja": [
+          "1日目 コミュニティへの参加"
+        ]
       },
       "logo": "images/community-logo-sitcon.png",
       "website": "https://sitcon.org/",
@@ -62,9 +74,15 @@
         "ja": "KaLUG (高雄 Linux ユーザーグループ) のイベントは、主に **Second Space（中央公園駅 3番出口）**で開催されます。開催時間は、毎月第3土曜日の午後です（実際は登壇者の都合により微調整があり、時々オンライン開催もあります）。イベントは時々バイリンガルで行われ、主に Linux とオープンソースに関連するテーマについて、講演と議論を両立させる形式で進行されます。"
       },
       "category": {
-        "zh": ["第一天 擺攤社群"],
-        "en": ["Day 1 Community Participation"],
-        "ja": ["1日目 コミュニティへの参加"]
+        "zh": [
+          "第一天 擺攤社群"
+        ],
+        "en": [
+          "Day 1 Community Participation"
+        ],
+        "ja": [
+          "1日目 コミュニティへの参加"
+        ]
       },
       "logo": "images/community-logo-kalug.png",
       "website": "https://kalug.tw/",
@@ -108,9 +126,15 @@
         "ja": "私たちは、高雄を拠点とするWordPress 愛好家のグループです。開発者、デザイナー、コンテンツ制作者、その他様々な WordPress 関連のメンバーが参加しています。このコミュニティを通じて、同じく WordPress に興味を持つ皆様と、私たちのアイデアや経験を共有したいと考えています。この WordPress ミートアップグループは、WordPress を愛するすべての人々の参加を心より歓迎します。"
       },
       "category": {
-        "zh": ["第一天 擺攤社群"],
-        "en": ["Day 1 Community Participation"],
-        "ja": ["1日目 コミュニティへの参加"]
+        "zh": [
+          "第一天 擺攤社群"
+        ],
+        "en": [
+          "Day 1 Community Participation"
+        ],
+        "ja": [
+          "1日目 コミュニティへの参加"
+        ]
       },
       "logo": "images/community-logo-kaohsiung_wordpress.png",
       "website": "https://www.meetup.com/kaohsiung-wordpress-meetup/",
@@ -131,14 +155,52 @@
         "ja": "私たちは、ソフトウェア開発を愛する開発者のグループです。主にドメイン駆動設計（Domain-Driven Design, DDD）の普及を推進しており、そのほかにも、アジャイル開発やソフトウェアアーキテクチャ設計、ビジネス組織の変革といった分野も手掛けています。<br>私たちは、様々なコミュニティと協力してソフトウェア開発を推進することを重視しており、台湾のソフトウェア実力が世界で認められることを願っています。"
       },
       "category": {
-        "zh": ["第一天 擺攤社群"],
-        "en": ["Day 1 Community Participation"],
-        "ja": ["1日目 コミュニティへの参加"]
+        "zh": [
+          "第一天 擺攤社群"
+        ],
+        "en": [
+          "Day 1 Community Participation"
+        ],
+        "ja": [
+          "1日目 コミュニティへの参加"
+        ]
       },
       "logo": "images/community-logo-ddd_tw.png",
       "website": "https://www.facebook.com/groups/dddesigntw",
       "social": {
         "Facebook": "https://www.facebook.com/groups/dddesigntw"
+      }
+    },
+    {
+      "id": "gdg_on_campus",
+      "name": {
+        "zh": "GDG on Campus",
+        "en": "GDG on Campus",
+        "ja": "GDG on Campus"
+      },
+      "description": {
+        "zh": "對 Google 技術充滿好奇？想在大學找到一起玩轉程式碼、激發創意的夥伴嗎？<br><br>GDG on Campus (Google 開發者社群) 就是專為學生打造的技術社群！我們舉辦技術工作坊、讀書會，有機會邀請業界專家分享最新趨勢，主題涵蓋 AI、雲端、行動與網頁開發等。<br><br>在這裡，你不只能學習最新技術、累積專案經驗，更能與來自不同學校的開發者交流，找到志同道合的夥伴一起參加黑客松、挑戰 Google Solution Challenge！",
+        "en": "Curious about Google's technology? Want to find partners in university to play with code and spark creativity?<br><br>GDG on Campus (Google Developer Groups on Campus) is a technology community built just for students! We host technical workshops, study groups, and invite industry experts to share the latest trends on topics covering AI, Cloud, Mobile, and Web development.<br><br>Here, you can not only learn the latest technologies and gain project experience but also connect with developers from different schools and find like-minded partners to join hackathons and take on the Google Solution Challenge!",
+        "ja": "Google のテクノロジーに興味がありますか？大学で一緒にコーディングを楽しみ、クリエイティブなアイデアを刺激し合える仲間を見つけたいですか？<br><br>GDG on Campus (Google Developer Groups on Campus) は、まさに学生のために作られた技術コミュニティです！私たちは技術ワークショップや勉強会を開催し、業界の専門家を招いてAI、クラウド、モバイル、ウェブ開発などの最新トレンドを共有する機会も設けています。<br><br>ここでは、最新技術を学び、プロジェクト経験を積むだけでなく、様々な大学の開発者と交流し、ハッカソンに参加したり、Google Solution Challenge に挑戦したりする、志を同じくする仲間を見つけることができます！"
+      },
+      "category": {
+        "zh": [
+          "第一天 擺攤社群"
+        ],
+        "en": [
+          "Day 1 Community Participation"
+        ],
+        "ja": [
+          "1日目 コミュニティへの参加"
+        ]
+      },
+      "logo": "images/community-logo-gdg_on_camps.png",
+      "website": "",
+      "social": {
+        "GDG on Campus NUK": "https://gdg.community.dev/gdg-on-campus-national-university-of-kaohsiung-kaohsiung-city-taiwan/",
+        "GDG on Campus NKUST": "https://gdg.community.dev/gdg-on-campus-national-kaohsiung-university-of-science-and-technology-kaohsiung-taiwan/",
+        "GDG on Campus NSYSU": "https://gdg.community.dev/gdg-on-campus-national-sun-yat-sen-university-kaohsiung-city-taiwan/",
+        "GDG on Campus NCKU": "https://gdg.community.dev/gdg-on-campus-national-cheng-kung-university-tainan-city-taiwan/"
       }
     }
   ]
