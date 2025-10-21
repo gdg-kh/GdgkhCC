@@ -76,8 +76,7 @@ const translations = {
     sponsors_title: '特別感謝',
     sponsors_intro_text: '',
     community_title: '參與社群',
-    community_intro_text:
-      '第一天社群擺攤報名截止日期：10/18（六），歡迎任何與軟體有關的社群團體來擺攤交朋友<br><br>提供：<br>1. 11/22 星期六門票 X 2<br>2. 長桌 X 1 or 0.5（視報名情況調整）<br>3. 椅子 X 1 or 0.5（視報名情況調整）<br>4. 午餐 X 2<br>5. 官網和社群媒體宣傳<br><br>報名表單：<a href="https://forms.gle/TCd3jiQonXJ2EBgn6" target="_blank" rel="noopener noreferrer">https://forms.gle/TCd3jiQonXJ2EBgn6</a>',
+    community_intro_text: '',
     staff_title: '志工介紹',
     about_title: '關於我們',
     tickets_title: '票種介紹',
@@ -242,8 +241,7 @@ const translations = {
     sponsors_title: 'Special Thanks',
     sponsors_intro_text: '',
     community_title: 'Community',
-    community_intro_text:
-      'Community booth registration deadline for day one: 10/18 (Sat). We welcome any software-related community groups to set up a booth and make friends.<br><br>Provided:<br>1. Two tickets for Saturday, 11/22<br>2. 1 or 0.5 long table (adjustable based on registration numbers)<br>3. 1 or 0.5 chair (adjustable based on registration numbers)<br>4. Two lunches<br>5. Promotion on the official website and social media<br><br>Registration Form: <a href="https://forms.gle/TCd3jiQonXJ2EBgn6" target="_blank" rel="noopener noreferrer">https://forms.gle/TCd3jiQonXJ2EBgn6</a>',
+    community_intro_text: '',
     staff_title: 'Volunteers',
     about_title: 'About',
     tickets_title: 'Tickets',
@@ -422,8 +420,7 @@ const translations = {
     sponsors_title: '特別感謝',
     sponsors_intro_text: '',
     community_title: '参加コミュニティ',
-    community_intro_text:
-      '第一日コミュニティブースの申し込み締め切り：10/18（土）。ソフトウェアに関連するコミュニティ団体のご参加をお待ちしております。<br><br>提供：<br>1. 11/22（土）のチケット2枚<br>2. 長机1台または0.5台（申し込み状況に応じて調整）<br>3. 椅子1脚または0.5脚（申し込み状況に応じて調整）<br>4. 昼食2食分<br>5. 公式サイトおよびソーシャルメディアでの宣伝<br><br>申し込みフォーム：<a href="https://forms.gle/TCd3jiQonXJ2EBgn6" target="_blank" rel="noopener noreferrer">https://forms.gle/TCd3jiQonXJ2EBgn6</a>',
+    community_intro_text: '',
     staff_title: 'ボランティア紹介',
     about_title: '私たちについて',
     tickets_title: 'チケット紹介',
