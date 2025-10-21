@@ -1931,7 +1931,7 @@ main {
 .sponsor-logo {
   width: 100%; /* Scale by width */
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center; /* Center alignment for sponsors */
 }
 
@@ -3089,8 +3089,8 @@ html.page-switching {
 
 .sponsor-image {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
   object-position: center;
   cursor: pointer;
   transition: opacity 0.3s ease;
