@@ -64,7 +64,7 @@ function generateSpeakerPage(speaker) {
     .trim();
 
   const title = `${nameZh} - DevFest Kaohsiung X S. TW Communities Gathering 2025`;
-  const ogTitle = `${nameZh} - DevFest 2025 高雄場`;
+  const ogTitle = `${nameZh} - DevFest 高雄場 X 南臺灣技術社群大聚 2025`;
   const description =
     '今年 GDG Kaohsiung 和開發者 Buffet 一起在高雄舉辦軟體社群年會 - 一起探索 Google Cloud、Gemini AI、Android 開發及科技向善的最新趨勢,並且與眾多技術社群一同交流學習。';
   const keywords = `DevFest, Kaohsiung, ${nameZh}, ${orgZh}, Speaker, Google Developer`;
