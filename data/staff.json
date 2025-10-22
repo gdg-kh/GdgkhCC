@@ -96,6 +96,36 @@
       "social": {}
     },
     {
+      "id": "renata",
+      "name": {
+        "zh": "Renata",
+        "en": "Renata",
+        "ja": "Renata"
+      },
+      "org": {
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "title": {
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "description": {
+        "zh": "一手包辦台中 / 高雄國泰 CDC 小聚",
+        "en": "Single-handedly organizing the Cathay CDC in Taichung and Kaohsiung",
+        "ja": "台中・高雄の CDC ミートアップを一人で主催"
+      },
+      "category": {
+        "zh": "第一天主辦",
+        "en": "Day 1 Staff",
+        "ja": "1日目 日目ボランティア"
+      },
+      "photo": "images/staff-renata.png",
+      "social": {}
+    },
+    {
       "id": "leigh",
       "name": {
         "zh": "Leigh",
