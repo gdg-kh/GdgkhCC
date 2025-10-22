@@ -123,6 +123,56 @@
       "social": {
         "Homepage": "https://www.colosscious.com/home"
       }
+    },
+    {
+      "id": "titansoft",
+      "name": {
+        "zh": "新加坡商鈦坦科技股份有限公司 台灣分公司",
+        "en": "新加坡商鈦坦科技股份有限公司 台灣分公司",
+        "ja": "新加坡商鈦坦科技股份有限公司 台灣分公司"
+      },
+      "type": "company",
+      "description": {
+        "zh": "鈦坦科技，是一間總部位於新加坡的軟體開發公司，提供線上軟體平台客製開發與維護，以及代理 Atlassian 旗下產品 Jira Software & Confluence，以自身實際使用經驗提供一站式導入服務。身處快速變動的軟體產業，我們採用敏捷開發，同時將敏捷思維注入公司文化，實⾏〔彈性⼯時〕、採⽤〔⾃主升遷〕、實踐〔薪資透明〕，在多年導入及迭代的經驗下，我們也開始提供企業客製化敏捷課程及顧問諮詢服務，並積極參與產業、社群與教育活動推廣敏捷精神。<br><br>全頻道認識鈦坦：portaly.cc/titansoft",
+        "en": "Titansoft is a software development company headquartered in Singapore, providing custom development and maintenance of online software platforms, as well as serving as a distributor for Atlassian products such as Jira Software & Confluence, offering one-stop implementation services based on our own practical experience. Operating in the rapidly changing software industry, we adopt agile development while infusing agile thinking into our company culture, implementing [flexible working hours], adopting [self-directed promotion], and practicing [salary transparency]. With years of implementation and iteration experience, we have also begun offering customized enterprise agile training and consulting services, and actively participate in industry, community, and educational activities to promote agile principles.<br><br>Get to know Titansoft through all our channels: portaly.cc/titansoft",
+        "ja": "Titansoft はシンガポールに本社を置くソフトウェア開発会社で、オンラインソフトウェアプラットフォームのカスタム開発と保守を提供しています。また、Atlassian 製品である Jira Software & Confluence の代理店でもあり、自社の実際の使用経験に基づいたワンストップの導入サービスを提供しています。変化の激しいソフトウェア業界において、私たちはアジャイル開発を採用し、アジャイル思考を企業文化に注入しています。具体的には、**〔フレキシブルな勤務時間〕の実施、〔自主的な昇進制度〕の採用、〔給与の透明性〕**の実践を行っています。長年の導入と改善の経験に基づき、現在では企業向けにカスタマイズされたアジャイル研修やコンサルティングサービスも提供しており、アジャイルの精神を広めるために業界、コミュニティ、教育活動に積極的に参加しています。<br><br>Titansoft の全チャンネルはこちら：portaly.cc/titansoft"
+      },
+      "category": {
+        "zh": "公司贊助",
+        "en": "Company Sponsorship",
+        "ja": "企業スポンサー"
+      },
+      "logo": "images/sponsor-logo-titansoft.png",
+      "website": "https://portaly.cc/titansoft",
+      "social": {
+        "Homepage": "https://portaly.cc/titansoft"
+      }
+    },
+    {
+      "id": "cdc_kh",
+      "name": {
+        "zh": "國泰 CDC 小聚",
+        "en": "國泰 CDC 小聚",
+        "ja": "國泰 CDC 小聚"
+      },
+      "type": "company",
+      "tier": "",
+      "description": {
+        "zh": "坐擁亞灣黃金地段，面向尊爵不凡無敵海景，在高雄亞灣區，藏身著一座「雲端開發基地」。我們是「高雄 CDC」，我們看見南台灣的技術軟實力，致力推動高雄在地金融科技與雲端技術交流，邀請有共同熱愛的你一起來到南台灣金融科技新據點！",
+        "en": "Nestled in the prime location of Asia's New Bay Area (亞灣) and facing a magnificent, unparalleled sea view, a \"Cloud Development Base\" is discreetly housed in Kaohsiung's Asia's New Bay Area.We are \"Kaohsiung CDC\" (高雄 CDC). We recognize the burgeoning soft power of technology in Southern Taiwan and are dedicated to promoting local FinTech and Cloud Technology exchange in Kaohsiung. We invite you, who share this passion, to join us at this new hub for financial technology in Southern Taiwan!",
+        "ja": "亞湾のゴールデンエリアに位置し、比類なき壮大な海の景色を望む、高雄の亞湾地区に「クラウド開発拠点」がひっそりと佇んでいます。私たちは「高雄 CDC」です。私たちは台湾南部の持つ技術的なソフトパワーに着目し、高雄におけるフィンテック（FinTech）とクラウド技術交流の推進に尽力しています。同じ熱意を持つあなたを、台湾南部における金融技術の新しい拠点へとご招待します！"
+      },
+      "category": {
+        "zh": "公司贊助",
+        "en": "Company Sponsorship",
+        "ja": "企業スポンサー"
+      },
+      "logo": "images/sponsor-logo-cdc.png",
+      "website": "https://cdckh.kktix.cc/",
+      "social": {
+        "Homepage": "https://cdckh.kktix.cc/",
+        "Line": "https://reurl.cc/3MvZMR"
+      }
     }
   ]
 }

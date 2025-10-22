@@ -1931,7 +1931,7 @@ main {
 .sponsor-logo {
   width: 100%; /* Scale by width */
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center; /* Center alignment for sponsors */
 }
 
@@ -3089,8 +3089,8 @@ html.page-switching {
 
 .sponsor-image {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
   object-position: center;
   cursor: pointer;
   transition: opacity 0.3s ease;
@@ -3186,18 +3186,52 @@ html.page-switching {
 }
 
 .social-link {
-  padding: 6px 12px;
+  padding: 4px 10px;
   background: var(--md-sys-color-surface-variant);
   color: var(--md-sys-color-on-surface-variant);
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 12px;
   font-size: 12px;
   transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-link:hover {
   background: var(--md-sys-color-primary);
   color: var(--md-sys-color-on-primary);
+}
+
+/* 分享按鈕樣式 - 保持與 social-link 一致 */
+.share-link {
+  padding: 4px 10px;
+  background: var(--md-sys-color-surface-variant);
+  color: var(--md-sys-color-on-surface-variant);
+  border: none;
+  border-radius: 12px;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.share-link:hover {
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+}
+
+.share-link:active {
+  transform: scale(0.95);
+}
+
+/* 複製成功提示 */
+.share-link.copied {
+  background: var(--md-sys-color-secondary);
+  color: var(--md-sys-color-on-secondary);
 }
 
 .about-activities {
@@ -3304,10 +3338,11 @@ html.page-switching {
   justify-content: flex-start;
 }
 
-.speaker-info .social-link {
+.speaker-info .social-link,
+.speaker-info .share-link {
   font-size: 11px;
-  padding: 4px 8px;
-  border-radius: 6px;
+  padding: 4px 10px;
+  border-radius: 10px;
 }
 
 /* 講者卡片高亮效果 */
