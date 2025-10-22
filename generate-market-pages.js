@@ -82,10 +82,7 @@ function generateMarketPage(booth, template) {
   let html = template;
 
   // 替換 title
-  html = html.replace(
-    /<title id="pageTitle">.*?<\/title>/,
-    `<title id="pageTitle">${escapeHtml(title)}</title>`
-  );
+  html = html.replace(/<title id="pageTitle">.*?<\/title>/, `<title id="pageTitle">${escapeHtml(title)}</title>`);
 
   // 替換 Open Graph meta tags
   html = html.replace(

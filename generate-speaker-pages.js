@@ -47,7 +47,7 @@ function generateSpeakerPage(speaker) {
 
   // 讀取動態模板
   const templatePath = path.join(__dirname, 'speaker-template.html');
-  let templateContent = fs.readFileSync(templatePath, 'utf-8');
+  const templateContent = fs.readFileSync(templatePath, 'utf-8');
 
   // 準備 meta tags 資料
   const baseUrl = 'https://devfest2025.gdgkaohsiung.org';
@@ -73,10 +73,7 @@ function generateSpeakerPage(speaker) {
   let html = templateContent;
 
   // 替換 title
-  html = html.replace(
-    /<title id="pageTitle">.*?<\/title>/,
-    `<title id="pageTitle">${escapeHtml(title)}</title>`
-  );
+  html = html.replace(/<title id="pageTitle">.*?<\/title>/, `<title id="pageTitle">${escapeHtml(title)}</title>`);
 
   // 替換 Open Graph meta tags
   html = html.replace(
