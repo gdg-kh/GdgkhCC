@@ -140,6 +140,32 @@
       "social": {
         "Facebook": "https://www.facebook.com/groups/dddesigntw"
       }
+    },
+    {
+      "id": "gdg_on_campus",
+      "name": {
+        "zh": "GDG on Campus",
+        "en": "GDG on Campus",
+        "ja": "GDG on Campus"
+      },
+      "description": {
+        "zh": "對 Google 技術充滿好奇？想在大學找到一起玩轉程式碼、激發創意的夥伴嗎？<br><br>GDG on Campus (Google 開發者社群) 就是專為學生打造的技術社群！我們舉辦技術工作坊、讀書會，有機會邀請業界專家分享最新趨勢，主題涵蓋 AI、雲端、行動與網頁開發等。<br><br>在這裡，你不只能學習最新技術、累積專案經驗，更能與來自不同學校的開發者交流，找到志同道合的夥伴一起參加黑客松、挑戰 Google Solution Challenge！",
+        "en": "Curious about Google's technology? Want to find partners in university to play with code and spark creativity?<br><br>GDG on Campus (Google Developer Groups on Campus) is a technology community built just for students! We host technical workshops, study groups, and invite industry experts to share the latest trends on topics covering AI, Cloud, Mobile, and Web development.<br><br>Here, you can not only learn the latest technologies and gain project experience but also connect with developers from different schools and find like-minded partners to join hackathons and take on the Google Solution Challenge!",
+        "ja": "Google のテクノロジーに興味がありますか？大学で一緒にコーディングを楽しみ、クリエイティブなアイデアを刺激し合える仲間を見つけたいですか？<br><br>GDG on Campus (Google Developer Groups on Campus) は、まさに学生のために作られた技術コミュニティです！私たちは技術ワークショップや勉強会を開催し、業界の専門家を招いてAI、クラウド、モバイル、ウェブ開発などの最新トレンドを共有する機会も設けています。<br><br>ここでは、最新技術を学び、プロジェクト経験を積むだけでなく、様々な大学の開発者と交流し、ハッカソンに参加したり、Google Solution Challenge に挑戦したりする、志を同じくする仲間を見つけることができます！"
+      },
+      "category": {
+        "zh": ["第一天 擺攤社群"],
+        "en": ["Day 1 Community Participation"],
+        "ja": ["1日目 コミュニティへの参加"]
+      },
+      "logo": "images/community-logo-gdg_on_camps.png",
+      "website": "",
+      "social": {
+        "GDG on Campus NUK": "https://gdg.community.dev/gdg-on-campus-national-university-of-kaohsiung-kaohsiung-city-taiwan/",
+        "GDG on Campus NKUST": "https://gdg.community.dev/gdg-on-campus-national-kaohsiung-university-of-science-and-technology-kaohsiung-taiwan/",
+        "GDG on Campus NSYSU": "https://gdg.community.dev/gdg-on-campus-national-sun-yat-sen-university-kaohsiung-city-taiwan/",
+        "GDG on Campus NCKU": "https://gdg.community.dev/gdg-on-campus-national-cheng-kung-university-tainan-city-taiwan/"
+      }
     }
   ]
 }
