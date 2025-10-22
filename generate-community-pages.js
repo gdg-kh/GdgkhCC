@@ -62,7 +62,7 @@ function generateCommunityPage(community, template) {
   }
 
   // 準備 meta tags 資料
-  const baseUrl = 'https://devfest2025.gdgkaohsiung.org';
+  const baseUrl = 'https://gdgkh.cc';
   const communityUrl = `${baseUrl}/community/${communityId}/`;
   const ogImageUrl = `${baseUrl}/community/${communityId}/og-image.png`;
 

@@ -50,7 +50,7 @@ function generateSpeakerPage(speaker) {
   const templateContent = fs.readFileSync(templatePath, 'utf-8');
 
   // 準備 meta tags 資料
-  const baseUrl = 'https://devfest2025.gdgkaohsiung.org';
+  const baseUrl = 'https://gdgkh.cc';
   const speakerUrl = `${baseUrl}/speakers/${speakerId}/`;
   const ogImageUrl = `${baseUrl}/speakers/${speakerId}/og-image.png`;
 

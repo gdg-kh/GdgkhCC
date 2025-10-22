@@ -62,7 +62,7 @@ function generateMarketPage(booth, template) {
   }
 
   // 準備 meta tags 資料
-  const baseUrl = 'https://devfest2025.gdgkaohsiung.org';
+  const baseUrl = 'https://gdgkh.cc';
   const boothUrl = `${baseUrl}/markets/${boothId}/`;
   const ogImageUrl = `${baseUrl}/markets/${boothId}/og-image.png`;
 

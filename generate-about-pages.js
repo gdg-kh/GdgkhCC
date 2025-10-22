@@ -62,7 +62,7 @@ function generateAboutPage(about, template) {
   }
 
   // 準備 meta tags 資料
-  const baseUrl = 'https://devfest2025.gdgkaohsiung.org';
+  const baseUrl = 'https://gdgkh.cc';
   const aboutUrl = `${baseUrl}/about/${aboutId}/`;
   const ogImageUrl = `${baseUrl}/about/${aboutId}/og-image.png`;
 

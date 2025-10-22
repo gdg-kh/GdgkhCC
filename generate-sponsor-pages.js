@@ -62,7 +62,7 @@ function generateSponsorPage(sponsor, template) {
   }
 
   // 準備 meta tags 資料
-  const baseUrl = 'https://devfest2025.gdgkaohsiung.org';
+  const baseUrl = 'https://gdgkh.cc';
   const sponsorUrl = `${baseUrl}/sponsors/${sponsorId}/`;
   const ogImageUrl = `${baseUrl}/sponsors/${sponsorId}/og-image.png`;
 
