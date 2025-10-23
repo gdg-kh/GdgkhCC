@@ -21,7 +21,9 @@
       "Bash(node generate-sponsor-pages.js:*)",
       "Bash(node generate-speaker-pages.js:*)",
       "Bash(node generate-staff-pages.js:*)",
-      "Bash(node generate-about-pages.js:*)"
+      "Bash(node generate-about-pages.js:*)",
+      "Bash(dir speakers sponsors community staff markets about)",
+      "Bash(npm run generate:all:*)"
     ],
     "deny": [],
     "ask": []

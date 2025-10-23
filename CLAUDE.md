@@ -6,6 +6,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a static website for "DevFest Kaohsiung X S. TW Communities Gathering 2025" - a tech conference event. The site is built with vanilla HTML, CSS, and JavaScript without any build system or package manager, featuring a modern dynamic content management system.
 
+**Base URL**: `gdgkh.cc` - All URLs and links should use this canonical domain.
+
 ## Project Structure
 
 ```
@@ -106,7 +108,7 @@ npm run generate:all
 
 - Due to CORS restrictions, you must use a local server to test the dynamic content features. Opening `index.html` directly in a browser will not load the JSON data files.
 - ESLint is configured with Prettier integration - run `npm run lint:fix` and `npm run format` before committing changes.
-- Generated pages in `share/speakers/`, `share/sponsors/`, etc. are created from templates and should not be edited manually. Edit the JSON data files and templates instead, then regenerate.
+- **NEVER manually edit generated pages**: Files in `share/speakers/`, `share/sponsors/`, `share/community/`, `share/staff/`, `share/markets/`, and `share/about/` directories are auto-generated from templates and JSON data. Any manual edits will be overwritten. Always edit the source JSON files in `data/` and the template files (`*-template.html`), then regenerate using the appropriate `npm run generate:*` command.
 
 ## Architecture
 
@@ -169,6 +171,29 @@ The site features two content management approaches:
 - JSON files with multi-language objects
 - Dynamically loaded and rendered
 - Structured data format with validation
+
+## Git Workflow
+
+**Main Branch**: `master`
+
+**Branch Naming Conventions**:
+- Feature branches: `feature/description`
+- Hotfix branches: `hotfix/description`
+- Development branch: `develop` (for staging changes before merge to master)
+
+**Important Git Considerations**:
+- Generated files in `share/` directories should be committed after regeneration
+- Always run `npm run generate:all` after updating JSON data files before committing
+- Run `npm run lint:fix` and `npm run format` before creating commits
+- When updating content, commit both the source JSON files and the regenerated pages together
+
+**Typical Workflow**:
+1. Create feature/hotfix branch from `master` or `develop`
+2. Make changes to source files (JSON data, templates, or core code)
+3. If JSON data changed, run `npm run generate:all`
+4. Run `npm run lint:fix` and `npm run format`
+5. Commit both source changes and generated files
+6. Merge to `develop` for testing, then to `master` for production
 
 ## CSS Architecture
 
