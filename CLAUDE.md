@@ -160,16 +160,16 @@ node generate-about-pages.js
    - Support for zh-Hant, en, and ja languages
    - **Important**: Language codes differ between `main.js` (uses `zh-Hant`) and JSON files (uses `zh`)
 
-3. **Dynamic Content Management** (`js/dynamic-content.js`):
+3. **Dynamic Content Management** (`2025/js/dynamic-content.js`):
    - `DynamicContentManager` class handles all dynamic content
-   - JSON-based data loading from `/data` directory
+   - JSON-based data loading from `2025/data/` directory
    - Multi-language content support in JSON files
    - Automatic rendering of speakers, thanks list, community booths, etc.
    - Content validation and error handling
 
-4. **Static Page Generation System** (`generate-*.js` scripts):
-   - Node.js scripts read JSON data and generate individual HTML pages
-   - Each page uses a template (`*-template.html`) that dynamically loads its data
+4. **Static Page Generation System** (`2025/generate-*.js` scripts):
+   - Node.js scripts read JSON data from `2025/data/` and generate individual HTML pages
+   - Each page uses a template (`2025/*-template.html`) that dynamically loads its data
    - Pages include proper Open Graph meta tags for social sharing
    - OG images can be generated using browser-based canvas tools
    - Generated pages provide SEO benefits and shareable URLs
@@ -177,7 +177,7 @@ node generate-about-pages.js
 5. **Event Information Structure**:
    - Multi-day schedule with track-based organization
    - Speaker cards with expandable bio sections organized by category
-   - Five speaker categories with distinct colors (see `js/dynamic-content.js:221-252`)
+   - Five speaker categories with distinct colors (see `2025/js/dynamic-content.js:221-252`)
    - Thanks list tier system with partner and company types
    - Tech creation market booth displays
 
@@ -185,12 +185,12 @@ node generate-about-pages.js
 
 The site features two content management approaches:
 
-**Static Content** (`js/main.js`):
+**Static Content** (`2025/js/main.js`):
 
 - Navigation labels, event metadata, static page content
 - Managed via `translations` object with language keys
 
-**Dynamic Content** (`data/*.json` + `js/dynamic-content.js`):
+**Dynamic Content** (`2025/data/*.json` + `2025/js/dynamic-content.js`):
 
 - Speakers, thanks list, community participants, staff
 - JSON files with multi-language objects
@@ -209,7 +209,7 @@ The site features two content management approaches:
 
 **Important Git Considerations**:
 
-- Generated files in `share/` directories should be committed after regeneration
+- Generated files in `2025/share/` directories should be committed after regeneration
 - Always run `npm run generate:all` after updating JSON data files before committing
 - Run `npm run lint:fix` and `npm run format` before creating commits
 - When updating content, commit both the source JSON files and the regenerated pages together
@@ -249,20 +249,20 @@ Key color system variables:
 
 ### Critical Functions
 
-- `DynamicContentManager.loadAllData()`: Loads all JSON data files (`js/dynamic-content.js:36`)
-- `DynamicContentManager.renderSpeakers()`: Renders speaker cards (`js/dynamic-content.js:214`)
-- `DynamicContentManager.enhanceScheduleWithSpeakers()`: Links schedule to speaker data (`js/dynamic-content.js:790`)
-- `DynamicContentManager.initHashNavigation()`: Enables URL hash-based navigation to specific items (`js/dynamic-content.js:1068`)
+- `DynamicContentManager.loadAllData()`: Loads all JSON data files (`2025/js/dynamic-content.js:36`)
+- `DynamicContentManager.renderSpeakers()`: Renders speaker cards (`2025/js/dynamic-content.js:214`)
+- `DynamicContentManager.enhanceScheduleWithSpeakers()`: Links schedule to speaker data (`2025/js/dynamic-content.js:790`)
+- `DynamicContentManager.initHashNavigation()`: Enables URL hash-based navigation to specific items (`2025/js/dynamic-content.js:1068`)
 - `setLanguage()`: Updates language and re-renders content
 - Navigation event handlers for page switching
 
 ### Page Generation Scripts
 
-Each `generate-*.js` script follows a similar pattern:
+Each `2025/generate-*.js` script follows a similar pattern:
 
-1. Reads JSON data from `data/*.json`
-2. Creates a directory for each item (e.g., `share/speakers/speaker-id/`)
-3. Copies the template file (`*-template.html`) as `index.html` in each directory
+1. Reads JSON data from `2025/data/*.json`
+2. Creates a directory for each item (e.g., `2025/share/speakers/speaker-id/`)
+3. Copies the template file (`2025/*-template.html`) as `index.html` in each directory
 4. Templates dynamically load data from JSON files at runtime
 5. Some scripts also generate OG image creator tools
 
@@ -284,26 +284,26 @@ The project uses ESLint and Prettier for code quality:
 
 ### Static Content
 
-- Navigation labels and static text in `translations` object (`js/main.js`)
+- Navigation labels and static text in `translations` object (`2025/js/main.js`)
 - Event schedules and metadata hardcoded in translations
 
 ### Dynamic Content
 
-- **Speakers**: `data/speakers.json` - Speaker profiles with sessions and bios
-- **Thanks**: `data/thanks.json` - Thanks list information with tiers
-- **Community**: `data/community.json` - Participating community groups
-- **Staff**: `data/staff.json` - Volunteer and staff information
-- **TWM (Tech Creation Market)**: `data/twm.json` - Tech creation market booth information
-- **About**: `data/about.json` - About us and organization information
-- **Carousel**: `data/carousel.json` - Homepage carousel slides
+- **Speakers**: `2025/data/speakers.json` - Speaker profiles with sessions and bios
+- **Thanks**: `2025/data/thanks.json` - Thanks list information with tiers
+- **Community**: `2025/data/community.json` - Participating community groups
+- **Staff**: `2025/data/staff.json` - Volunteer and staff information
+- **TWM (Tech Creation Market)**: `2025/data/twm.json` - Tech creation market booth information
+- **About**: `2025/data/about.json` - About us and organization information
+- **Carousel**: `2025/data/carousel.json` - Homepage carousel slides
 
 Each JSON file follows a structured format with multi-language support. See `README-DYNAMIC-CONTENT.md` for detailed format specifications.
 
 ### JSON Editor Tool
 
-The project includes a visual JSON editor (`json-editor.html`) for non-technical content management:
+The project includes a visual JSON editor (`2025/json-editor.html`) for non-technical content management:
 
-- Access at `http://localhost:8000/json-editor.html` (requires local server)
+- Access at `http://localhost:8000/json-editor.html` (requires local server, remember to `cd 2025` first)
 - Provides tabbed interface for editing all content types
 - Supports file upload for existing JSON data
 - Generates downloadable JSON files
@@ -334,7 +334,7 @@ Required fields vary by content type but all support multi-language text objects
 
 ### Schedule Enhancement System
 
-The system automatically enhances the event schedule with speaker information (`js/dynamic-content.js:790+`):
+The system automatically enhances the event schedule with speaker information (`2025/js/dynamic-content.js:790+`):
 
 - Links schedule items to speaker data via `schedule.session_id` field in speaker JSON
 - Displays speaker photo, name, and organization inline in schedule
@@ -344,7 +344,7 @@ The system automatically enhances the event schedule with speaker information (`
 
 ### URL Hash Navigation
 
-Supports direct linking to specific content items (`js/dynamic-content.js:1026+`):
+Supports direct linking to specific content items (`2025/js/dynamic-content.js:1026+`):
 
 - Format: `#speaker-id`, `#booth-id`, `#thanks-id`, etc.
 - Automatically switches to correct page and scrolls to item
@@ -354,7 +354,7 @@ Supports direct linking to specific content items (`js/dynamic-content.js:1026+`
 
 Individual pages are generated for each content item to improve SEO and social sharing:
 
-- Each item gets its own URL (e.g., `/share/speakers/speaker-id/`)
+- Each item gets its own URL (e.g., `/2025/share/speakers/speaker-id/`)
 - Pages include proper meta tags for social media preview
 - OG images can be generated using browser-based tools
 - Templates dynamically load data from JSON files, ensuring consistency with main site
@@ -391,10 +391,10 @@ Individual pages are generated for each content item to improve SEO and social s
 
 ### Multi-language Content
 
-- All new content must include zh, en, and ja language variants (zh-Hant in `main.js`, zh in JSON files)
+- All new content must include zh, en, and ja language variants (zh-Hant in `2025/js/main.js`, zh in JSON files)
 - Use the `DynamicContentManager.getText()` method for consistent language handling
 - Language codes: `zh-Hant` (Traditional Chinese), `en` (English), `ja` (Japanese)
-- In JSON files, use `zh`, `en`, `ja` as keys
+- In JSON files (located in `2025/data/`), use `zh`, `en`, `ja` as keys
 
 ### Regenerating Pages After Content Changes
 
