@@ -22,7 +22,7 @@ This is a static website for "DevFest Kaohsiung X S. TW Communities Gathering 20
 │   └── dynamic-content.js       # Dynamic content management system
 ├── data/                        # JSON data files for dynamic content
 │   ├── speakers.json            # Speaker information
-│   ├── markets.json             # Tech creation market booths
+│   ├── twm.json                 # Tech creation market booths
 │   ├── sponsors.json            # Sponsor information
 │   ├── community.json           # Community participants
 │   ├── staff.json               # Staff and volunteer information
@@ -34,7 +34,7 @@ This is a static website for "DevFest Kaohsiung X S. TW Communities Gathering 20
 │   ├── sponsors/                # Individual sponsor pages with OG meta tags
 │   ├── community/               # Individual community pages with OG meta tags
 │   ├── staff/                   # Individual staff pages with OG meta tags
-│   ├── markets/                 # Individual market booth pages with OG meta tags
+│   ├── twm/                     # Individual tech creation market booth pages with OG meta tags
 │   └── about/                   # Individual about pages with OG meta tags
 ├── generate-*.js                # Node.js scripts for generating individual pages
 ├── *-template.html              # HTML templates for generated pages
@@ -94,8 +94,8 @@ npm run generate:community
 # Generate individual staff pages
 npm run generate:staff
 
-# Generate individual market booth pages
-npm run generate:markets
+# Generate individual tech creation market booth pages
+npm run generate:twm
 
 # Generate individual about pages
 npm run generate:about
@@ -108,7 +108,7 @@ npm run generate:all
 
 - Due to CORS restrictions, you must use a local server to test the dynamic content features. Opening `index.html` directly in a browser will not load the JSON data files.
 - ESLint is configured with Prettier integration - run `npm run lint:fix` and `npm run format` before committing changes.
-- **NEVER manually edit generated pages**: Files in `share/speakers/`, `share/sponsors/`, `share/community/`, `share/staff/`, `share/markets/`, and `share/about/` directories are auto-generated from templates and JSON data. Any manual edits will be overwritten. Always edit the source JSON files in `data/` and the template files (`*-template.html`), then regenerate using the appropriate `npm run generate:*` command.
+- **NEVER manually edit generated pages**: Files in `share/speakers/`, `share/sponsors/`, `share/community/`, `share/staff/`, `share/twm/`, and `share/about/` directories are auto-generated from templates and JSON data. Any manual edits will be overwritten. Always edit the source JSON files in `data/` and the template files (`*-template.html`), then regenerate using the appropriate `npm run generate:*` command.
 
 ## Architecture
 
@@ -177,17 +177,20 @@ The site features two content management approaches:
 **Main Branch**: `master`
 
 **Branch Naming Conventions**:
+
 - Feature branches: `feature/description`
 - Hotfix branches: `hotfix/description`
 - Development branch: `develop` (for staging changes before merge to master)
 
 **Important Git Considerations**:
+
 - Generated files in `share/` directories should be committed after regeneration
 - Always run `npm run generate:all` after updating JSON data files before committing
 - Run `npm run lint:fix` and `npm run format` before creating commits
 - When updating content, commit both the source JSON files and the regenerated pages together
 
 **Typical Workflow**:
+
 1. Create feature/hotfix branch from `master` or `develop`
 2. Make changes to source files (JSON data, templates, or core code)
 3. If JSON data changed, run `npm run generate:all`
@@ -265,7 +268,7 @@ The project uses ESLint and Prettier for code quality:
 - **Sponsors**: `data/sponsors.json` - Sponsor information with tiers
 - **Community**: `data/community.json` - Participating community groups
 - **Staff**: `data/staff.json` - Volunteer and staff information
-- **Markets**: `data/markets.json` - Tech creation market booth information
+- **TWM (Tech Creation Market)**: `data/twm.json` - Tech creation market booth information
 - **About**: `data/about.json` - About us and organization information
 - **Carousel**: `data/carousel.json` - Homepage carousel slides
 

@@ -6,7 +6,7 @@ class DynamicContentManager {
     this.currentLanguage = 'zh-Hant';
     this.data = {
       speakers: [],
-      markets: [],
+      twm: [],
       sponsors: [],
       community: [],
       staff: [],
@@ -36,9 +36,9 @@ class DynamicContentManager {
   // 載入所有資料
   async loadAllData() {
     try {
-      const [speakers, markets, sponsors, community, staff, about, carousel] = await Promise.all([
+      const [speakers, twm, sponsors, community, staff, about, carousel] = await Promise.all([
         this.loadJSON('data/speakers.json'),
-        this.loadJSON('data/markets.json'),
+        this.loadJSON('data/twm.json'),
         this.loadJSON('data/sponsors.json'),
         this.loadJSON('data/community.json'),
         this.loadJSON('data/staff.json'),
@@ -47,7 +47,7 @@ class DynamicContentManager {
       ]);
 
       this.data.speakers = speakers.speakers || [];
-      this.data.markets = markets.booths || [];
+      this.data.twm = twm.booths || [];
       this.data.sponsors = sponsors.sponsors || [];
       this.data.community = community.community || [];
       this.data.staff = staff.staff || [];
@@ -75,7 +75,7 @@ class DynamicContentManager {
   renderAllContent() {
     this.renderCarousel();
     this.renderSpeakers();
-    this.renderMarkets();
+    this.renderTwm();
     this.renderSponsors();
     this.renderCommunity();
     this.renderStaff();
@@ -381,40 +381,40 @@ class DynamicContentManager {
   }
 
   // 渲染技術創作市集
-  renderMarkets() {
-    const container = document.querySelector('#tech-creation-market .market-grid');
+  renderTwm() {
+    const container = document.querySelector('#tech-creation-market .twm-grid');
     if (!container) return;
 
     container.innerHTML = '';
 
-    this.data.markets.forEach((booth) => {
-      const boothCard = this.createMarketCard(booth);
+    this.data.twm.forEach((booth) => {
+      const boothCard = this.createTwmCard(booth);
       container.appendChild(boothCard);
     });
   }
 
-  // 建立技術市集卡片
-  createMarketCard(booth) {
+  // 建立技術創作市集卡片
+  createTwmCard(booth) {
     const card = document.createElement('div');
-    card.className = 'market-booth-card';
+    card.className = 'twm-booth-card';
     card.setAttribute('data-booth-id', booth.id);
     card.id = booth.id; // 設定 ID 以支援 URL hash 導航
 
     // 生成攤位的靜態頁面網址
-    const shareUrl = `${window.location.origin}/share/markets/${booth.id}/`;
+    const shareUrl = `${window.location.origin}/share/twm/${booth.id}/`;
     const socialLinks = this.createSocialLinks(booth.social, shareUrl);
 
     // 創建優化的圖片
     const imageContainer = window.imageLoader?.createOptimizedImage(booth.logo, `${this.getText(booth.name)} Logo`, {
-      className: 'market-booth-image',
+      className: 'twm-booth-image',
       loading: 'lazy',
       placeholder: true,
     });
 
     card.innerHTML = `
-            <div class="market-booth-info">
-                <h3 class="market-booth-title">${this.getText(booth.name)}</h3>
-                <div class="market-booth-description">${this.getText(booth.description)}</div>
+            <div class="twm-booth-info">
+                <h3 class="twm-booth-title">${this.getText(booth.name)}</h3>
+                <div class="twm-booth-description">${this.getText(booth.description)}</div>
                 ${socialLinks}
             </div>
         `;
@@ -424,7 +424,7 @@ class DynamicContentManager {
       card.insertBefore(imageContainer, card.firstChild);
     } else {
       const img = document.createElement('img');
-      img.className = 'market-booth-image';
+      img.className = 'twm-booth-image';
       img.src = booth.logo;
       img.alt = `${this.getText(booth.name)} Logo`;
       img.loading = 'lazy';
@@ -755,11 +755,11 @@ class DynamicContentManager {
     this.renderSpeakers();
   }
 
-  // 新增技術市集攤位
-  async addMarketBooth(boothData) {
-    this.data.markets.push(boothData);
-    await this.saveData('markets', { booths: this.data.markets });
-    this.renderMarkets();
+  // 新增技術創作市集攤位
+  async addTwmBooth(boothData) {
+    this.data.twm.push(boothData);
+    await this.saveData('twm', { booths: this.data.twm });
+    this.renderTwm();
   }
 
   // 新增贊助商
@@ -1108,7 +1108,7 @@ class DynamicContentManager {
     // 頁面類型對應表
     const pageMapping = {
       speakers: 'speakers',
-      markets: 'tech-creation-market',
+      twm: 'tech-creation-market',
       sponsors: 'sponsors',
       community: 'community',
       staff: 'staff',
@@ -1148,10 +1148,10 @@ class DynamicContentManager {
       return;
     }
 
-    // 檢查是否為技術市集 ID
-    const booth = this.data.markets.find((m) => m.id === hash);
+    // 檢查是否為技術創作市集 ID
+    const booth = this.data.twm.find((m) => m.id === hash);
     if (booth) {
-      this.navigateToItem(hash, 'markets');
+      this.navigateToItem(hash, 'twm');
       return;
     }
 

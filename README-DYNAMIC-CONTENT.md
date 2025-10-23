@@ -15,7 +15,7 @@
 /
 ├── data/
 │   ├── speakers.json      # 講者資料
-│   ├── markets.json       # 技術創作市集攤位
+│   ├── twm.json           # 技術創作市集攤位
 │   ├── sponsors.json      # 贊助夥伴
 │   └── about.json         # 關於我們
 ├── js/
@@ -75,7 +75,7 @@
 
 2. **新增贊助商**：編輯 `data/sponsors.json`
 3. **新增關於我們**：編輯 `data/about.json`
-4. **新增技術市集攤位**：編輯 `data/markets.json`
+4. **新增技術創作市集攤位**：編輯 `data/twm.json`
 
 ### 方法2：使用管理介面
 
@@ -100,8 +100,8 @@ await window.dynamicContentManager.addSponsor(sponsorData);
 // 新增社群擺攤
 await window.dynamicContentManager.addBooth(boothData);
 
-// 新增技術市集攤位
-await window.dynamicContentManager.addMarketBooth(boothData);
+// 新增技術創作市集攤位
+await window.dynamicContentManager.addTwmBooth(boothData);
 ```
 
 ## 📄 資料格式說明
@@ -163,7 +163,7 @@ await window.dynamicContentManager.addMarketBooth(boothData);
 }
 ```
 
-### 技術創作市集 (markets.json)
+### 技術創作市集 (twm.json)
 
 ```json
 {

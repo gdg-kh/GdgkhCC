@@ -12,7 +12,7 @@
         "en": "The Taiwan Kotlin User Group is dedicated to promoting the Kotlin language and its ecosystem. Whether it's backend development, Android, KMP, or the Ktor server framework, you can find practical and interesting applications.<br><br>At the Tech Creation Market, we have prepared Kotlin learning materials and development case studies to help developers get started quickly and experience the elegance and efficiency of Kotlin. We welcome you to come to our booth to exchange ideas, share learning experiences, or discuss how to build better software products with Kotlin!<br><br>Expected items for sale: Personal technical zines, custom-designed small items.",
         "ja": "Taiwan Kotlin User Group は Kotlin 言語とエコシステムの推進に取り組んでいます。バックエンド開発、Android、KMP、サーバーフレームワーク Ktor など、実用的で興味深いアプリケーションを見つけることができます。<br><br>技術創作マーケットでは、開発者が素早く始められ、Kotlin の優雅さと効率性を体験できるよう、Kotlin 学習教材と開発事例を用意しています。ぜひブースにお越しいただき、アイデアを交換し、学習経験を共有し、Kotlin でより良いソフトウェア製品を構築する方法について議論しましょう！<br><br>販売予定商品：個人技術創作誌、個人デザイン小物。"
       },
-      "logo": "images/market-logo-taiwan_kotlin_user_group.png",
+      "logo": "images/twm-logo-taiwan_kotlin_user_group.png",
       "website": "",
       "social": {}
     },
@@ -28,7 +28,7 @@
         "en": "Regarding anonymous networks and internet freedom, how to introduce the settings for Tor/Tails and OONI, and the current status of internet freedom in the Taiwan region.",
         "ja": "匿名ネットワークとインターネットの自由に関して、Tor/Tails や OONI の関連設定、および台湾地域のインターネットの自由の現状をどのように紹介するか。"
       },
-      "logo": "images/market-logo-default.png",
+      "logo": "images/twm-logo-default.png",
       "website": "https://anoni.net",
       "social": {
         "Homepage": "https://anoni.net/"
@@ -46,7 +46,7 @@
         "en": "I don't know what to write \uD83D\uDE42",
         "ja": "何を書いたらいいか分からない XD"
       },
-      "logo": "images/market-logo-mantou.png",
+      "logo": "images/twm-logo-mantou.png",
       "website": "",
       "social": {}
     }

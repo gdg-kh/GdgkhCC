@@ -329,7 +329,7 @@
         <button class="tab active" onclick="switchTab('speakers')">📢 講者管理</button>
         <button class="tab" onclick="switchTab('sponsors')">💼 贊助商管理</button>
         <button class="tab" onclick="switchTab('community')">🌐 社群管理</button>
-        <button class="tab" onclick="switchTab('markets')">🛒 市集管理</button>
+        <button class="tab" onclick="switchTab('twm')">🛒 市集管理</button>
         <button class="tab" onclick="switchTab('staff')">👥 工作人員管理</button>
         <button class="tab" onclick="switchTab('about')">📋 關於我們管理</button>
       </div>
@@ -828,55 +828,55 @@
           </div>
         </div>
 
-        <!-- Markets Section -->
-        <div class="section" id="markets">
+        <!-- TWM Section -->
+        <div class="section" id="twm">
           <h2>🛒 市集管理</h2>
-          <div id="market-form">
+          <div id="twm-form">
             <div class="form-group">
               <label>攤位 ID (英文，用於系統識別)</label>
-              <input id="market-id" placeholder="例如：kotlin_booth" type="text" />
+              <input id="twm-id" placeholder="例如：kotlin_booth" type="text" />
             </div>
 
             <div class="form-group">
               <label>攤位名稱</label>
               <div class="lang-tabs">
-                <div class="lang-tab active" onclick="switchLang('market-name', 'zh')">中文</div>
-                <div class="lang-tab" onclick="switchLang('market-name', 'en')">English</div>
-                <div class="lang-tab" onclick="switchLang('market-name', 'ja')">日本語</div>
+                <div class="lang-tab active" onclick="switchLang('twm-name', 'zh')">中文</div>
+                <div class="lang-tab" onclick="switchLang('twm-name', 'en')">English</div>
+                <div class="lang-tab" onclick="switchLang('twm-name', 'ja')">日本語</div>
               </div>
               <div class="lang-content active" data-lang="zh">
-                <input id="market-name-zh" placeholder="攤位中文名稱" type="text" />
+                <input id="twm-name-zh" placeholder="攤位中文名稱" type="text" />
               </div>
               <div class="lang-content" data-lang="en">
-                <input id="market-name-en" placeholder="Booth English Name" type="text" />
+                <input id="twm-name-en" placeholder="Booth English Name" type="text" />
               </div>
               <div class="lang-content" data-lang="ja">
-                <input id="market-name-ja" placeholder="ブース日本語名" type="text" />
+                <input id="twm-name-ja" placeholder="ブース日本語名" type="text" />
               </div>
             </div>
 
             <div class="form-group">
               <label>攤位描述</label>
               <div class="lang-tabs">
-                <div class="lang-tab active" onclick="switchLang('market-desc', 'zh')">中文</div>
-                <div class="lang-tab" onclick="switchLang('market-desc', 'en')">English</div>
-                <div class="lang-tab" onclick="switchLang('market-desc', 'ja')">日本語</div>
+                <div class="lang-tab active" onclick="switchLang('twm-desc', 'zh')">中文</div>
+                <div class="lang-tab" onclick="switchLang('twm-desc', 'en')">English</div>
+                <div class="lang-tab" onclick="switchLang('twm-desc', 'ja')">日本語</div>
               </div>
               <div class="lang-content active" data-lang="zh">
                 <textarea
-                  id="market-desc-zh"
+                  id="twm-desc-zh"
                   placeholder="請輸入攤位描述，可包含販售物品等資訊"
                 ></textarea>
               </div>
               <div class="lang-content" data-lang="en">
                 <textarea
-                  id="market-desc-en"
+                  id="twm-desc-en"
                   placeholder="Please enter booth description and items for sale"
                 ></textarea>
               </div>
               <div class="lang-content" data-lang="ja">
                 <textarea
-                  id="market-desc-ja"
+                  id="twm-desc-ja"
                   placeholder="ブースの説明と販売アイテムを入力してください"
                 ></textarea>
               </div>
@@ -885,46 +885,46 @@
             <div class="form-group">
               <label>Logo 檔案路徑</label>
               <input
-                id="market-logo"
-                placeholder="例如：images/market-logo-booth.png"
+                id="twm-logo"
+                placeholder="例如：images/twm-logo-booth.png"
                 type="text"
               />
             </div>
 
             <div class="form-group">
               <label>官網</label>
-              <input id="market-website" placeholder="攤位相關網站 URL" type="text" />
+              <input id="twm-website" placeholder="攤位相關網站 URL" type="text" />
             </div>
 
             <div class="form-group">
               <label>社群連結</label>
               <div class="social-inputs">
-                <input id="market-homepage" placeholder="Homepage URL" type="text" />
-                <input id="market-facebook" placeholder="Facebook URL" type="text" />
-                <input id="market-instagram" placeholder="Instagram URL" type="text" />
-                <input id="market-twitter" placeholder="Twitter URL" type="text" />
-                <input id="market-github" placeholder="GitHub URL" type="text" />
+                <input id="twm-homepage" placeholder="Homepage URL" type="text" />
+                <input id="twm-facebook" placeholder="Facebook URL" type="text" />
+                <input id="twm-instagram" placeholder="Instagram URL" type="text" />
+                <input id="twm-twitter" placeholder="Twitter URL" type="text" />
+                <input id="twm-github" placeholder="GitHub URL" type="text" />
               </div>
             </div>
 
             <div style="margin-top: 30px">
-              <button class="btn" onclick="addMarket()">➕ 新增攤位</button>
-              <button class="btn btn-secondary" onclick="clearMarketForm()">🗑️ 清空表單</button>
-              <button class="btn btn-success" onclick="generateMarketsJSON()">📄 產生 JSON</button>
-              <button class="btn btn-secondary" onclick="loadMarketsFile()">📁 載入現有檔案</button>
+              <button class="btn" onclick="addTwm()">➕ 新增攤位</button>
+              <button class="btn btn-secondary" onclick="clearTwmForm()">🗑️ 清空表單</button>
+              <button class="btn btn-success" onclick="generateTwmJSON()">📄 產生 JSON</button>
+              <button class="btn btn-secondary" onclick="loadTwmFile()">📁 載入現有檔案</button>
             </div>
           </div>
 
           <div class="items-list">
             <h3>📋 目前攤位列表</h3>
-            <div id="markets-list"></div>
+            <div id="twm-list"></div>
           </div>
 
           <div class="output-section">
             <h3>📄 JSON 輸出</h3>
-            <pre id="markets-output">JSON 將在這裡顯示...</pre>
-            <button class="btn" onclick="copyMarketsJSON()">📋 複製 JSON</button>
-            <button class="btn btn-success" onclick="downloadMarketsJSON()">💾 下載檔案</button>
+            <pre id="twm-output">JSON 將在這裡顯示...</pre>
+            <button class="btn" onclick="copyTwmJSON()">📋 複製 JSON</button>
+            <button class="btn btn-success" onclick="downloadTwmJSON()">💾 下載檔案</button>
           </div>
         </div>
 
@@ -1180,7 +1180,7 @@
       let speakers = [];
       let sponsors = [];
       let communities = [];
-      let markets = [];
+      let twm = [];
       let staff = [];
       let about = [];
 
@@ -1967,153 +1967,153 @@
       }
 
       // ===========================================
-      // MARKETS 市集管理功能
+      // TWM 市集管理功能
       // ===========================================
 
-      function clearMarketForm() {
-        const inputs = document.querySelectorAll('#market-form input, #market-form textarea');
+      function clearTwmForm() {
+        const inputs = document.querySelectorAll('#twm-form input, #twm-form textarea');
         inputs.forEach((input) => (input.value = ''));
       }
 
-      function addMarket() {
-        const id = document.getElementById('market-id').value.trim();
+      function addTwm() {
+        const id = document.getElementById('twm-id').value.trim();
         if (!id) {
           alert('請輸入攤位 ID');
           return;
         }
 
-        if (markets.find((m) => m.id === id)) {
+        if (twm.find((m) => m.id === id)) {
           alert('攤位 ID 已存在，請使用不同的 ID');
           return;
         }
 
-        const market = {
+        const booth = {
           id: id,
           name: {
-            zh: document.getElementById('market-name-zh').value.trim(),
-            en: document.getElementById('market-name-en').value.trim(),
-            ja: document.getElementById('market-name-ja').value.trim(),
+            zh: document.getElementById('twm-name-zh').value.trim(),
+            en: document.getElementById('twm-name-en').value.trim(),
+            ja: document.getElementById('twm-name-ja').value.trim(),
           },
           description: {
-            zh: document.getElementById('market-desc-zh').value.trim(),
-            en: document.getElementById('market-desc-en').value.trim(),
-            ja: document.getElementById('market-desc-ja').value.trim(),
+            zh: document.getElementById('twm-desc-zh').value.trim(),
+            en: document.getElementById('twm-desc-en').value.trim(),
+            ja: document.getElementById('twm-desc-ja').value.trim(),
           },
-          logo: document.getElementById('market-logo').value.trim(),
-          website: document.getElementById('market-website').value.trim(),
+          logo: document.getElementById('twm-logo').value.trim(),
+          website: document.getElementById('twm-website').value.trim(),
           social: {},
         };
 
         const socialLinks = {
-          Homepage: 'market-homepage',
-          Facebook: 'market-facebook',
-          Instagram: 'market-instagram',
-          Twitter: 'market-twitter',
-          GitHub: 'market-github',
+          Homepage: 'twm-homepage',
+          Facebook: 'twm-facebook',
+          Instagram: 'twm-instagram',
+          Twitter: 'twm-twitter',
+          GitHub: 'twm-github',
         };
 
         Object.keys(socialLinks).forEach((key) => {
           const value = document.getElementById(socialLinks[key]).value.trim();
           if (value) {
-            market.social[key] = value;
+            booth.social[key] = value;
           }
         });
 
-        markets.push(market);
-        updateMarketsList();
-        generateMarketsJSON();
-        clearMarketForm();
-        showAlert('success', `攤位 "${market.name.zh || market.name.en}" 已成功添加！`);
+        twm.push(booth);
+        updateTwmList();
+        generateTwmJSON();
+        clearTwmForm();
+        showAlert('success', `攤位 "${booth.name.zh || booth.name.en}" 已成功添加！`);
       }
 
-      function updateMarketsList() {
-        const listElement = document.getElementById('markets-list');
+      function updateTwmList() {
+        const listElement = document.getElementById('twm-list');
         listElement.innerHTML = '';
 
-        if (markets.length === 0) {
+        if (twm.length === 0) {
           listElement.innerHTML =
             '<p style="text-align: center; color: #666; padding: 20px;">目前沒有攤位資料</p>';
           return;
         }
 
-        markets.forEach((market, index) => {
+        twm.forEach((booth, index) => {
           const itemDiv = document.createElement('div');
           itemDiv.className = 'item-card';
           itemDiv.innerHTML = `
                 <div class="item-header">
-                    <span class="item-id">${market.id}</span>
+                    <span class="item-id">${booth.id}</span>
                 </div>
-                <div class="item-name"><strong>${market.name.zh || market.name.en}</strong></div>
+                <div class="item-name"><strong>${booth.name.zh || booth.name.en}</strong></div>
                 <div class="item-actions">
-                    <button class="btn btn-secondary" onclick="editMarket(${index})">✏️ 編輯</button>
-                    <button class="btn btn-danger" onclick="deleteMarket(${index})">🗑️ 刪除</button>
+                    <button class="btn btn-secondary" onclick="editTwm(${index})">✏️ 編輯</button>
+                    <button class="btn btn-danger" onclick="deleteTwm(${index})">🗑️ 刪除</button>
                 </div>
             `;
           listElement.appendChild(itemDiv);
         });
       }
 
-      function deleteMarket(index) {
-        if (confirm(`確定要刪除攤位 "${markets[index].name.zh || markets[index].name.en}" 嗎？`)) {
-          markets.splice(index, 1);
-          updateMarketsList();
-          generateMarketsJSON();
+      function deleteTwm(index) {
+        if (confirm(`確定要刪除攤位 "${twm[index].name.zh || twm[index].name.en}" 嗎？`)) {
+          twm.splice(index, 1);
+          updateTwmList();
+          generateTwmJSON();
           showAlert('success', '攤位已成功刪除！');
         }
       }
 
-      function editMarket(index) {
-        const market = markets[index];
-        document.getElementById('market-id').value = market.id;
-        document.getElementById('market-name-zh').value = market.name.zh || '';
-        document.getElementById('market-name-en').value = market.name.en || '';
-        document.getElementById('market-name-ja').value = market.name.ja || '';
-        document.getElementById('market-desc-zh').value = market.description.zh || '';
-        document.getElementById('market-desc-en').value = market.description.en || '';
-        document.getElementById('market-desc-ja').value = market.description.ja || '';
-        document.getElementById('market-logo').value = market.logo || '';
-        document.getElementById('market-website').value = market.website || '';
+      function editTwm(index) {
+        const booth = twm[index];
+        document.getElementById('twm-id').value = booth.id;
+        document.getElementById('twm-name-zh').value = booth.name.zh || '';
+        document.getElementById('twm-name-en').value = booth.name.en || '';
+        document.getElementById('twm-name-ja').value = booth.name.ja || '';
+        document.getElementById('twm-desc-zh').value = booth.description.zh || '';
+        document.getElementById('twm-desc-en').value = booth.description.en || '';
+        document.getElementById('twm-desc-ja').value = booth.description.ja || '';
+        document.getElementById('twm-logo').value = booth.logo || '';
+        document.getElementById('twm-website').value = booth.website || '';
 
-        document.getElementById('market-homepage').value = market.social.Homepage || '';
-        document.getElementById('market-facebook').value = market.social.Facebook || '';
-        document.getElementById('market-instagram').value = market.social.Instagram || '';
-        document.getElementById('market-twitter').value = market.social.Twitter || '';
-        document.getElementById('market-github').value = market.social.GitHub || '';
+        document.getElementById('twm-homepage').value = booth.social.Homepage || '';
+        document.getElementById('twm-facebook').value = booth.social.Facebook || '';
+        document.getElementById('twm-instagram').value = booth.social.Instagram || '';
+        document.getElementById('twm-twitter').value = booth.social.Twitter || '';
+        document.getElementById('twm-github').value = booth.social.GitHub || '';
 
-        markets.splice(index, 1);
-        updateMarketsList();
-        generateMarketsJSON();
+        twm.splice(index, 1);
+        updateTwmList();
+        generateTwmJSON();
         window.scrollTo(0, 0);
         showAlert('success', '攤位資料已載入表單，請修改後重新添加');
       }
 
-      function generateMarketsJSON() {
-        const output = { booths: markets };
-        document.getElementById('markets-output').textContent = JSON.stringify(output, null, 2);
+      function generateTwmJSON() {
+        const output = { booths: twm };
+        document.getElementById('twm-output').textContent = JSON.stringify(output, null, 2);
       }
 
-      function copyMarketsJSON() {
-        const jsonText = document.getElementById('markets-output').textContent;
+      function copyTwmJSON() {
+        const jsonText = document.getElementById('twm-output').textContent;
         navigator.clipboard.writeText(jsonText).then(() => {
           showAlert('success', 'JSON 已複製到剪貼簿！');
         });
       }
 
-      function downloadMarketsJSON() {
-        const jsonText = document.getElementById('markets-output').textContent;
+      function downloadTwmJSON() {
+        const jsonText = document.getElementById('twm-output').textContent;
         const blob = new Blob([jsonText], { type: 'application/json' });
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = 'markets.json';
+        a.download = 'twm.json';
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
         URL.revokeObjectURL(url);
-        showAlert('success', 'markets.json 檔案已下載！');
+        showAlert('success', 'twm.json 檔案已下載！');
       }
 
-      function loadMarketsFile() {
+      function loadTwmFile() {
         const input = document.createElement('input');
         input.type = 'file';
         input.accept = '.json';
@@ -2126,12 +2126,12 @@
             try {
               const data = JSON.parse(e.target.result);
               if (data.booths && Array.isArray(data.booths)) {
-                markets = data.booths;
-                updateMarketsList();
-                generateMarketsJSON();
-                showAlert('success', `已載入 ${markets.length} 個攤位資料！`);
+                twm = data.booths;
+                updateTwmList();
+                generateTwmJSON();
+                showAlert('success', `已載入 ${twm.length} 個攤位資料！`);
               } else {
-                showAlert('error', '檔案格式不正確，請確認是有效的 markets.json 檔案');
+                showAlert('error', '檔案格式不正確，請確認是有效的 twm.json 檔案');
               }
             } catch (error) {
               showAlert('error', '無法解析 JSON 檔案，請確認檔案格式是否正確');
@@ -2534,8 +2534,8 @@
         generateSponsorsJSON();
         updateCommunityList();
         generateCommunityJSON();
-        updateMarketsList();
-        generateMarketsJSON();
+        updateTwmList();
+        generateTwmJSON();
         updateStaffList();
         generateStaffJSON();
         updateAboutList();

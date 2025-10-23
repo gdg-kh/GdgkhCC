@@ -4,20 +4,20 @@ const fs = require('fs');
 const path = require('path');
 
 // 檔案路徑
-const MARKETS_JSON = path.join(__dirname, 'data', 'markets.json');
-const TEMPLATE_FILE = path.join(__dirname, 'market-template.html');
-const OUTPUT_DIR = path.join(__dirname, 'share', 'markets');
+const TWM_JSON = path.join(__dirname, 'data', 'twm.json');
+const TEMPLATE_FILE = path.join(__dirname, 'twm-template.html');
+const OUTPUT_DIR = path.join(__dirname, 'share', 'twm');
 
 /**
- * 讀取市集攤位資料
+ * 讀取技術創作市集攤位資料
  */
-function loadMarkets() {
+function loadTwm() {
   try {
-    const data = fs.readFileSync(MARKETS_JSON, 'utf-8');
+    const data = fs.readFileSync(TWM_JSON, 'utf-8');
     const json = JSON.parse(data);
     return json.booths;
   } catch (error) {
-    console.error('❌ 無法讀取市集攤位資料:', error.message);
+    console.error('❌ 無法讀取技術創作市集攤位資料:', error.message);
     process.exit(1);
   }
 }
@@ -49,13 +49,13 @@ function escapeHtml(text) {
 }
 
 /**
- * 產生單一市集攤位頁面
+ * 產生單一技術創作市集攤位頁面
  */
-function generateMarketPage(booth, template) {
+function generateTwmPage(booth, template) {
   const boothId = booth.id;
   const boothDir = path.join(OUTPUT_DIR, boothId);
 
-  // 建立市集攤位資料夾
+  // 建立技術創作市集攤位資料夾
   if (!fs.existsSync(boothDir)) {
     fs.mkdirSync(boothDir, { recursive: true });
     console.log(`📁 建立資料夾: ${boothDir}`);
@@ -63,8 +63,8 @@ function generateMarketPage(booth, template) {
 
   // 準備 meta tags 資料
   const baseUrl = 'https://gdgkh.cc';
-  const boothUrl = `${baseUrl}/share/markets/${boothId}/`;
-  const ogImageUrl = `${baseUrl}/share/markets/${boothId}/og-image.png`;
+  const boothUrl = `${baseUrl}/share/twm/${boothId}/`;
+  const ogImageUrl = `${baseUrl}/share/twm/${boothId}/og-image.png`;
 
   const nameZh = booth.name.zh || booth.name.en;
   const descriptionZh = (booth.description.zh || booth.description.en)
@@ -143,12 +143,12 @@ function generateMarketPage(booth, template) {
   // 寫入檔案
   const htmlPath = path.join(boothDir, 'index.html');
   fs.writeFileSync(htmlPath, html, 'utf-8');
-  console.log(`✓ 產生頁面: share/markets/${boothId}/index.html`);
+  console.log(`✓ 產生頁面: share/twm/${boothId}/index.html`);
 
   // 提示需要手動添加 og-image.png
   const ogImagePath = path.join(boothDir, 'og-image.png');
   if (!fs.existsSync(ogImagePath)) {
-    console.log(`  ⚠ 請手動添加: share/markets/${boothId}/og-image.png`);
+    console.log(`  ⚠ 請手動添加: share/twm/${boothId}/og-image.png`);
   }
 }
 
@@ -156,31 +156,31 @@ function generateMarketPage(booth, template) {
  * 主函式
  */
 function main() {
-  console.log('🚀 開始產生市集攤位頁面...\n');
+  console.log('🚀 開始產生技術創作市集攤位頁面...\n');
 
   // 讀取資料
-  const booths = loadMarkets();
+  const booths = loadTwm();
   const template = loadTemplate();
 
-  console.log(`📊 找到 ${booths.length} 個市集攤位\n`);
+  console.log(`📊 找到 ${booths.length} 個技術創作市集攤位\n`);
 
   // 確保輸出目錄存在
   if (!fs.existsSync(OUTPUT_DIR)) {
     fs.mkdirSync(OUTPUT_DIR, { recursive: true });
   }
 
-  // 產生所有市集攤位頁面
+  // 產生所有技術創作市集攤位頁面
   let successCount = 0;
   booths.forEach((booth) => {
     try {
-      generateMarketPage(booth, template);
+      generateTwmPage(booth, template);
       successCount++;
     } catch (error) {
       console.error(`❌ 產生 ${booth.id} 頁面失敗:`, error.message);
     }
   });
 
-  console.log(`\n✅ 完成！成功產生 ${successCount}/${booths.length} 個市集攤位頁面`);
+  console.log(`\n✅ 完成！成功產生 ${successCount}/${booths.length} 個技術創作市集攤位頁面`);
   console.log(`📁 輸出目錄: ${OUTPUT_DIR}`);
 }
 

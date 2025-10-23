@@ -88,26 +88,26 @@
     <div class="loading-container" id="loadingContainer">
       <div class="spinner"></div>
       <h1>正在載入市集攤位資訊...</h1>
-      <p>Loading market booth information...</p>
+      <p>Loading TWM booth information...</p>
     </div>
 
     <script>
       // 從 URL 獲取市集攤位 ID
       function getBoothId() {
         const pathParts = window.location.pathname.split('/').filter(Boolean);
-        const marketsIndex = pathParts.indexOf('markets');
-        if (marketsIndex !== -1 && pathParts[marketsIndex + 1]) {
-          return pathParts[marketsIndex + 1];
+        const twmIndex = pathParts.indexOf('twm');
+        if (twmIndex !== -1 && pathParts[twmIndex + 1]) {
+          return pathParts[twmIndex + 1];
         }
         return null;
       }
 
-      // 載入市集攤位資料
+      // 載入技術創作市集攤位資料
       async function loadBoothData(boothId) {
         try {
-          const response = await fetch('../../../data/markets.json');
+          const response = await fetch('../../../data/twm.json');
           if (!response.ok) {
-            throw new Error('Failed to load market data');
+            throw new Error('Failed to load TWM data');
           }
 
           const data = await response.json();
@@ -128,8 +128,8 @@
       function updateMetaTags(booth) {
         const baseUrl = 'https://devfest2025.gdgkaohsiung.org';
         const boothId = booth.id;
-        const boothUrl = `${baseUrl}/markets/${boothId}/`;
-        const ogImageUrl = `${baseUrl}/markets/${boothId}/og-image.png`;
+        const boothUrl = `${baseUrl}/twm/${boothId}/`;
+        const ogImageUrl = `${baseUrl}/twm/${boothId}/og-image.png`;
 
         const nameZh = booth.name.zh || booth.name.en;
         const descriptionZh = booth.description.zh || booth.description.en;
@@ -138,7 +138,7 @@
         const ogTitle = `${nameZh} - DevFest 2025 高雄場`;
         const description =
           '今年 GDG Kaohsiung 和開發者 Buffet 一起在高雄舉辦軟體社群年會 - 一起探索 Google Cloud、Gemini AI、Android 開發及科技向善的最新趨勢，並且與眾多技術社群一同交流學習。';
-        const keywords = `DevFest, Kaohsiung, ${nameZh}, Tech Market, Booth, Google Developer`;
+        const keywords = `DevFest, Kaohsiung, ${nameZh}, TWM, Tech Workshop Market, Booth, Google Developer`;
 
         // 更新 title
         document.title = title;

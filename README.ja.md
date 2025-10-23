@@ -27,7 +27,7 @@
 │   ├── speakers.json            # スピーカー情報
 │   ├── sponsors.json            # スポンサー情報
 │   ├── community.json           # コミュニティ参加者
-│   ├── markets.json             # クリエーターマーケット
+│   ├── twm.json                 # テック創作マーケット
 │   ├── staff.json               # スタッフ情報
 │   └── about.json               # 私たちについて
 ├── images/                      # 画像リソース
@@ -101,10 +101,10 @@ npx serve .
   - ロゴファイル名
   - 公式ウェブサイトリンク
 
-##### 4. 🛍️ クリエーターマーケット（Markets）
+##### 4. 🛍️ テック創作マーケット（TWM）
 
-- **機能**: クリエーターマーケットブースの管理
-- **データファイル**: `data/markets.json`
+- **機能**: テック創作マーケットブースの管理
+- **データファイル**: `data/twm.json`
 - **対応フィールド**:
   - ブース名（3言語）
   - ブース説明（3言語）
@@ -165,7 +165,7 @@ JSON形式に慣れている場合は、`data/` フォルダ内のファイル�
 - `speakers.json` - スピーカー情報
 - `sponsors.json` - スポンサー情報
 - `community.json` - コミュニティ情報
-- `markets.json` - クリエーターマーケット
+- `twm.json` - テック創作マーケット
 - `staff.json` - スタッフ
 - `about.json` - 私たちについて
 

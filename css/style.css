@@ -2949,7 +2949,7 @@ html.page-switching {
     gap: 32px;
   }
 
-  .market-grid {
+  .twm-grid {
     grid-template-columns: 1fr;
     gap: 16px;
   }
@@ -2973,7 +2973,7 @@ html.page-switching {
 }
 
 /* === Dynamic Content Styles === */
-.market-grid {
+.twm-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 24px;
@@ -2981,7 +2981,7 @@ html.page-switching {
   margin: 0 auto;
 }
 
-.market-booth-card {
+.twm-booth-card {
   background-color: #ffffff;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -2991,39 +2991,39 @@ html.page-switching {
   overflow: hidden;
 }
 
-.market-booth-card:hover {
+.twm-booth-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
-.market-booth-image {
+.twm-booth-image {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center;
 }
 
-.market-booth-info {
+.twm-booth-info {
   padding: 20px;
   display: flex;
   flex-direction: column;
 }
 
-.market-booth-title {
+.twm-booth-title {
   font-size: 18px;
   font-weight: 700;
   margin: 0 0 12px 0;
   color: var(--md-sys-color-on-surface);
 }
 
-.market-booth-description {
+.twm-booth-description {
   font-size: 14px;
   line-height: 1.6;
   margin: 0 0 16px 0;
   color: var(--md-sys-color-on-surface-variant);
 }
 
-.market-booth-items {
+.twm-booth-items {
   font-size: 14px;
   line-height: 1.6;
   margin: 0 0 16px 0;

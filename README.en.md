@@ -28,7 +28,7 @@ multilingual support and dynamic content management.
 │   ├── speakers.json            # Speaker information
 │   ├── sponsors.json            # Sponsor information
 │   ├── community.json           # Community participants
-│   ├── markets.json             # Creator market
+│   ├── twm.json                 # Tech Creation Market
 │   ├── staff.json               # Staff information
 │   └── about.json               # About us
 ├── images/                      # Image resources
@@ -102,10 +102,10 @@ The editor provides six tabs corresponding to different content types:
   - Logo filename
   - Official website link
 
-##### 4. 🛍️ Creator Market (Markets)
+##### 4. 🛍️ Tech Creation Market (TWM)
 
-- **Function**: Manage creator market booths
-- **Data File**: `data/markets.json`
+- **Function**: Manage tech creation market booths
+- **Data File**: `data/twm.json`
 - **Supported Fields**:
   - Booth name (trilingual)
   - Booth description (trilingual)
@@ -166,7 +166,7 @@ If you're familiar with JSON format, you can also directly edit files in the `da
 - `speakers.json` - Speaker information
 - `sponsors.json` - Sponsor information
 - `community.json` - Community information
-- `markets.json` - Creator market
+- `twm.json` - Tech Creation Market
 - `staff.json` - Staff
 - `about.json` - About us
 
