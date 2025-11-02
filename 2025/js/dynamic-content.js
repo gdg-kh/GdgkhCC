@@ -521,7 +521,7 @@ class DynamicContentManager {
     const socialLinks = this.createSocialLinks(community.social, shareUrl);
 
     // 創建優化的圖片
-    const imageContainer = window.imageLoader?.createOptimizedImage(
+    const imageContainer = community.logo !== '' ? window.imageLoader?.createOptimizedImage(
       community.logo,
       `${this.getText(community.name)} Logo`,
       {
@@ -530,7 +530,7 @@ class DynamicContentManager {
         placeholder: true,
         onClick: () => window.open(community.website, '_blank'),
       }
-    );
+    ) : null;
 
     card.innerHTML = `
             <div class="community-info">
@@ -544,15 +544,6 @@ class DynamicContentManager {
     // 在卡片最前面插入圖片
     if (imageContainer) {
       card.insertBefore(imageContainer, card.firstChild);
-    } else {
-      const img = document.createElement('img');
-      img.className = 'community-image';
-      img.src = community.logo;
-      img.alt = `${this.getText(community.name)} Logo`;
-      img.loading = 'lazy';
-      img.style.cursor = 'pointer';
-      img.onclick = () => window.open(community.website, '_blank');
-      card.insertBefore(img, card.firstChild);
     }
 
     return card;
