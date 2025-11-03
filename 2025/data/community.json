@@ -184,7 +184,7 @@
         "en": ["Day 2 Organizing Partners"],
         "ja": ["2日目 運営パートナー"]
       },
-      "logo": "images/community-logo-pycon-tw.jpg",
+      "logo": "images/community-logo-pycon-tw.png",
       "website": "https://tw.pycon.org/",
       "social": {
         "Homepage": "https://tw.pycon.org/",
@@ -233,7 +233,7 @@
         "en": ["Day 2 Community Participation"],
         "ja": ["2日目 コミュニティへの参加"]
       },
-      "logo": "images/community-logo-mopcon.jpg",
+      "logo": "images/community-logo-mopcon.png",
       "website": "https://mopcon.org/2025/",
       "social": {
         "Homepage": "https://mopcon.org/2025/",
@@ -258,7 +258,7 @@
         "en": ["Day 2 Organizing Partners"],
         "ja": ["2日目 運営パートナー"]
       },
-      "logo": "",
+      "logo": "images/community-logo-default.png",
       "website": "https://anoni.net/",
       "social": {
         "Homepage": "https://anoni.net/"
@@ -281,7 +281,7 @@
         "en": ["Day 2 Organizing Partners"],
         "ja": ["2日目 運営パートナー"]
       },
-      "logo": "",
+      "logo": "images/community-logo-default.png",
       "website": "",
       "social": {}
     },
@@ -302,7 +302,7 @@
         "en": ["Day 2 Community Participation"],
         "ja": ["2日目 コミュニティへの参加"]
       },
-      "logo": "",
+      "logo": "images/community-logo-default.png",
       "website": "",
       "social": {}
     },
@@ -323,7 +323,7 @@
         "en": ["Day 2 Organizing Partners"],
         "ja": ["2日目 運営パートナー"]
       },
-      "logo": "",
+      "logo": "images/community-logo-default.png",
       "website": "",
       "social": {}
     },
@@ -344,7 +344,7 @@
         "en": ["Day 2 Community Participation"],
         "ja": ["2日目 コミュニティへの参加"]
       },
-      "logo": "",
+      "logo": "images/community-logo-default.png",
       "website": "",
       "social": {}
     },
@@ -365,7 +365,7 @@
         "en": ["Day 2 Organizing Partners"],
         "ja": ["2日目 運営パートナー"]
       },
-      "logo": "",
+      "logo": "images/community-logo-default.png",
       "website": "",
       "social": {}
     },
@@ -386,7 +386,7 @@
         "en": ["Day 2 Community Participation"],
         "ja": ["2日目 コミュニティへの参加"]
       },
-      "logo": "",
+      "logo": "images/community-logo-default.png",
       "website": "",
       "social": {}
     }
