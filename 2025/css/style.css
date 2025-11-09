@@ -3286,6 +3286,7 @@ html.page-switching {
   align-self: center;
   background-color: white;
   border-radius: 50%;
+  overflow: hidden;
 }
 
 .speaker-photo-small {
