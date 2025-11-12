@@ -12,17 +12,11 @@ const mysteryCode = 'G8EWCMDCCH'.split('').reverse().join('');
 // 第一日免費票 9（官網解謎活動）的線索就藏在這裡
 console.warn(
   '%c🎁 DevFest 2025 解謎活動 - 線索 9',
-  'color: #4285f4; font-size: 20px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);',
+  'color: #4285f4; font-size: 20px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);'
 );
-console.warn(
-  '%c恭喜你找到了第九個線索！',
-  'color: #34a853; font-size: 16px; font-weight: bold;',
-);
+console.warn('%c恭喜你找到了第九個線索！', 'color: #34a853; font-size: 16px; font-weight: bold;');
 console.warn('%c邀請碼: DPPJ7NFNRB', 'color: #ea4335; font-size: 18px; font-weight: bold;');
-console.warn(
-  '%c前往報名：https://gdg-kaohsiung.kktix.cc/events/devfest2025',
-  'color: #fbbc04; font-size: 14px;',
-);
+console.warn('%c前往報名：https://gdg-kaohsiung.kktix.cc/events/devfest2025', 'color: #fbbc04; font-size: 14px;');
 
 const translations = {
   'zh-Hant': {
