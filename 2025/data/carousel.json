@@ -33,6 +33,51 @@
         "ja": "南台湾技術コミュニティ大交流会 2025"
       },
       "loading": "eager"
+    },
+    {
+      "id": "partner",
+      "image": "images/image_banner_all_partner.png",
+      "alt": {
+        "zh": "合作夥伴",
+        "en": "Partner",
+        "ja": "協力団体"
+      },
+      "title": {
+        "zh": "合作夥伴",
+        "en": "partner",
+        "ja": "協力団体"
+      },
+      "loading": "eager"
+    },
+    {
+      "id": "partner",
+      "image": "images/image_banner_all_company.png",
+      "alt": {
+        "zh": "公司贊助",
+        "en": "Company Sponsor",
+        "ja": "企業協賛"
+      },
+      "title": {
+        "zh": "公司贊助",
+        "en": "Company Sponsor",
+        "ja": "企業協賛"
+      },
+      "loading": "eager"
+    },
+    {
+      "id": "partner",
+      "image": "images/image_banner_all_personal.png",
+      "alt": {
+        "zh": "個人贊助",
+        "en": "Personal Sponsor",
+        "ja": "個人協賛"
+      },
+      "title": {
+        "zh": "個人贊助",
+        "en": "Personal Sponsor",
+        "ja": "個人協賛"
+      },
+      "loading": "eager"
     }
   ]
 }
