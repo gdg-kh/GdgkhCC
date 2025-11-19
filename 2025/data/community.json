@@ -13,40 +13,23 @@
         "ja": "vLAB Online（台湾ルーティングネットワーク実験センター） は、技術を愛するエンジニアが自発的に設立した技術コミュニティです。初期は Cisco とルーティングネットワーク技術を核として、メンバーの学習と実践を支援するためのオンライン交流および実験環境を提供していました。技術の進化とコミュニティのニーズの変化に伴い、vLAB は討議テーマを徐々に拡大し、サイバーセキュリティ、クラウド、オープンソースツール、AI、デジタルガバナンスなど多様な分野を網羅するようになり、現在は Line グループを中心としたリアルタイム交流プラットフォームへと変貌しました。メンバーは、セキュリティ研究者、ネットワークエンジニア、システムアーキテクト、ITマネージャーなど、様々な業界から集まっており、日々の情報共有と相互扶助の議論を通じて、高い信頼性を持つ知識ネットワークを形成しています。2024年からは「月例ミートアップ計画」を開始し、テーマ講演、読書会、およびソーシャルタイムを組み合わせて、技術的な深みを強化するだけでなく、人脈形成とキャリアの成長を促進しています。vLAB は「共に学び、共に創る」という理念を貫き、急速に変化する技術時代において重要な支点であるとともに、地域社会の技術的自律性とコミュニティのレジリエンスを推進する実験プラットフォームでもあります。"
       },
       "category": {
-        "zh": ["第一天 擺攤社群", "第二天 籌備社群"],
-        "en": ["Day 1 Community Participation", "Day 2 Organizing Partners"],
-        "ja": ["1日目 コミュニティへの参加", "2日目 運営パートナー"]
+        "zh": [
+          "第一天 擺攤社群",
+          "第二天 籌備社群"
+        ],
+        "en": [
+          "Day 1 Community Participation",
+          "Day 2 Organizing Partners"
+        ],
+        "ja": [
+          "1日目 コミュニティへの参加",
+          "2日目 運営パートナー"
+        ]
       },
       "logo": "images/community-logo-v_lab_online.png",
       "website": "https://linktr.ee/vLabOnline",
       "social": {
         "Linktree": "https://linktr.ee/vLabOnline"
-      }
-    },
-    {
-      "id": "sticon",
-      "name": {
-        "zh": "SITCON",
-        "en": "SITCON",
-        "ja": "SITCON"
-      },
-      "description": {
-        "zh": "SITCON 學生計算機年會是台灣最大的學生資訊社群之一，自 2012 年發起，完全由學生自發籌辦與執行。我們的核心宗旨在於建立一個屬於學生的資訊技術交流平台，透過舉辦年會、夏令營與工作坊，促進跨校、跨領域的知識共享與經驗傳承。<br><br>SITCON 2026 將於 2026 年 3 月 28 日，在中央研究院人文社會科學館盛大舉行。",
-        "en": "SITCON stands for Students’ Information Technology Conference, originated in 2012 by students from various FLOSS communities. It all started from a simple idea: to hold a conference of the students, by the students, for the students. Since 2013, SITCON has become an annual conference with over 1,000 participants across Asia and sessions spanning programming, cybersecurity, game development,  and open-source communities.  SITCON strives to become the stepping portal toward the open source world, the honored stage of home-brew projects and research, and the intersection where newcomers and skilled developers collide and sparkle.<br><br>SITCON 2026 will be held on March 28, 2026, at the Humanities and Social Sciences Building, Academia Sinica.",
-        "ja": "SITCONは「Students’ Information Technology Conference」の略で、2012年に様々なFLOSSコミュニティの学生たちによって発足しました。すべては「学生による、学生のための、学生のカンファレンスを開く」という、一つのシンプルなアイデアから始まりました。2013年以降、SITCONは毎年開催されるカンファレンスとなり、アジア全域から1,000人以上が参加。プログラミング、サイバーセキュリティ、ゲーム開発、オープンソースコミュニティなど、そのセッションは多岐にわたります。SITCONは、オープンソースの世界への登竜門であり、自作プロジェクトや研究成果を発表する晴れの舞台、そして初心者と熟練開発者が出会い、互いに刺激し合う交差点となることを目指しています。<br><br>SITCON 2026は、2026年3月28日に中央研究院人文社会科学館にて盛大に開催されます。"
-      },
-      "category": {
-        "zh": ["第一天 擺攤社群"],
-        "en": ["Day 1 Community Participation"],
-        "ja": ["1日目 コミュニティへの参加"]
-      },
-      "logo": "images/community-logo-sitcon.png",
-      "website": "https://sitcon.org/",
-      "social": {
-        "Homepage": "https://sitcon.org/",
-        "Telegram": "https://sitcon.org/tg",
-        "Instagram": "https://sitcon.org/ig",
-        "Facebook": "https://sitcon.org/fb"
       }
     },
     {
@@ -62,9 +45,15 @@
         "ja": "KaLUG (高雄 Linux ユーザーグループ) のイベントは、主に **Second Space（中央公園駅 3番出口）**で開催されます。開催時間は、毎月第3土曜日の午後です（実際は登壇者の都合により微調整があり、時々オンライン開催もあります）。イベントは時々バイリンガルで行われ、主に Linux とオープンソースに関連するテーマについて、講演と議論を両立させる形式で進行されます。"
       },
       "category": {
-        "zh": ["第一天 擺攤社群"],
-        "en": ["Day 1 Community Participation"],
-        "ja": ["1日目 コミュニティへの参加"]
+        "zh": [
+          "第一天 擺攤社群"
+        ],
+        "en": [
+          "Day 1 Community Participation"
+        ],
+        "ja": [
+          "1日目 コミュニティへの参加"
+        ]
       },
       "logo": "images/community-logo-kalug.png",
       "website": "https://kalug.tw/",
@@ -85,9 +74,18 @@
         "ja": "KIMU 高雄インディーゲーム開発者ミートアップは、IGDA Taiwan に所属する SIG（Special Interest Group）であり、高雄を拠点に南台湾でインディーゲーム開発の交流活動を推進する非営利団体です。私たちは、定期的にワークショップ、ゲームジャム、共有会を開催しています。業界、教育関係者、学生、ゲーム愛好家など、インディーゲーム開発に興味のある方ならどなたでもご参加を歓迎します。"
       },
       "category": {
-        "zh": ["第一天 擺攤社群", "第二天 參加社群"],
-        "en": ["Day 1 Community Participation", "Day 2 Community Participation"],
-        "ja": ["1日目 コミュニティへの参加", "2日目 コミュニティへの参加"]
+        "zh": [
+          "第一天 擺攤社群",
+          "第二天 參加社群"
+        ],
+        "en": [
+          "Day 1 Community Participation",
+          "Day 2 Community Participation"
+        ],
+        "ja": [
+          "1日目 コミュニティへの参加",
+          "2日目 コミュニティへの参加"
+        ]
       },
       "logo": "images/community-logo-kimu.png",
       "website": "",
@@ -108,9 +106,15 @@
         "ja": "私たちは、高雄を拠点とするWordPress 愛好家のグループです。開発者、デザイナー、コンテンツ制作者、その他様々な WordPress 関連のメンバーが参加しています。このコミュニティを通じて、同じく WordPress に興味を持つ皆様と、私たちのアイデアや経験を共有したいと考えています。この WordPress ミートアップグループは、WordPress を愛するすべての人々の参加を心より歓迎します。"
       },
       "category": {
-        "zh": ["第一天 擺攤社群"],
-        "en": ["Day 1 Community Participation"],
-        "ja": ["1日目 コミュニティへの参加"]
+        "zh": [
+          "第一天 擺攤社群"
+        ],
+        "en": [
+          "Day 1 Community Participation"
+        ],
+        "ja": [
+          "1日目 コミュニティへの参加"
+        ]
       },
       "logo": "images/community-logo-kaohsiung_wordpress.png",
       "website": "https://www.meetup.com/kaohsiung-wordpress-meetup/",
@@ -131,9 +135,15 @@
         "ja": "私たちは、ソフトウェア開発を愛する開発者のグループです。主にドメイン駆動設計（Domain-Driven Design, DDD）の普及を推進しており、そのほかにも、アジャイル開発やソフトウェアアーキテクチャ設計、ビジネス組織の変革といった分野も手掛けています。<br>私たちは、様々なコミュニティと協力してソフトウェア開発を推進することを重視しており、台湾のソフトウェア実力が世界で認められることを願っています。"
       },
       "category": {
-        "zh": ["第一天 擺攤社群"],
-        "en": ["Day 1 Community Participation"],
-        "ja": ["1日目 コミュニティへの参加"]
+        "zh": [
+          "第一天 擺攤社群"
+        ],
+        "en": [
+          "Day 1 Community Participation"
+        ],
+        "ja": [
+          "1日目 コミュニティへの参加"
+        ]
       },
       "logo": "images/community-logo-ddd_tw.png",
       "website": "https://www.facebook.com/groups/dddesigntw",
@@ -154,9 +164,15 @@
         "ja": "Google のテクノロジーに興味がありますか？大学で一緒にコーディングを楽しみ、クリエイティブなアイデアを刺激し合える仲間を見つけたいですか？<br><br>GDG on Campus (Google Developer Groups on Campus) は、まさに学生のために作られた技術コミュニティです！私たちは技術ワークショップや勉強会を開催し、業界の専門家を招いてAI、クラウド、モバイル、ウェブ開発などの最新トレンドを共有する機会も設けています。<br><br>ここでは、最新技術を学び、プロジェクト経験を積むだけでなく、様々な大学の開発者と交流し、ハッカソンに参加したり、Google Solution Challenge に挑戦したりする、志を同じくする仲間を見つけることができます！"
       },
       "category": {
-        "zh": ["第一天 擺攤社群"],
-        "en": ["Day 1 Community Participation"],
-        "ja": ["1日目 コミュニティへの参加"]
+        "zh": [
+          "第一天 擺攤社群"
+        ],
+        "en": [
+          "Day 1 Community Participation"
+        ],
+        "ja": [
+          "1日目 コミュニティへの参加"
+        ]
       },
       "logo": "images/community-logo-gdg_on_camps.png",
       "website": "",
@@ -180,9 +196,18 @@
         "ja": "PyLadies Kaohsiung は、高雄に焦点を当てた女性コミュニティであり、安心かつ自信を持って議論できる環境を構築することに尽力しています。私たちは、女性が Python を通じて技術的な進歩だけでなく、多様な交流の機会を得られるようにすることを目指しており、さらに一歩進んで、国際的な PyLadies 組織と連携しながら、彼女たちが技術分野において積極的な参加者およびリーダーとなるよう支援します。"
       },
       "category": {
-        "zh": ["第一天 擺攤社群", "第二天 參加社群"],
-        "en": ["Day 1 Community Participation", "Day 2 Community Participation"],
-        "ja": ["1日目 コミュニティへの参加", "2日目 コミュニティへの参加"]
+        "zh": [
+          "第一天 擺攤社群",
+          "第二天 參加社群"
+        ],
+        "en": [
+          "Day 1 Community Participation",
+          "Day 2 Community Participation"
+        ],
+        "ja": [
+          "1日目 コミュニティへの参加",
+          "2日目 コミュニティへの参加"
+        ]
       },
       "logo": "images/community-logo-py_ladies_kaohsiung.png",
       "website": "https://pyladies-kaohsiung.github.io",
@@ -204,9 +229,15 @@
         "ja": "PyCon Taiwan（パイコン・台湾）は、台湾で毎年開催される Python プログラミング言語の議論と普及を目的としたカンファレンスです。Python を愛する有志によって運営され、Python 技術やその多様な応用に焦点を当てています。Python に興味のある皆さんの参加を歓迎します。知識を共有し、アイデアを交換し、交流を深め、一緒にネットワークを広げていきましょう。"
       },
       "category": {
-        "zh": ["第二天 籌備社群"],
-        "en": ["Day 2 Organizing Partners"],
-        "ja": ["2日目 運営パートナー"]
+        "zh": [
+          "第二天 籌備社群"
+        ],
+        "en": [
+          "Day 2 Organizing Partners"
+        ],
+        "ja": [
+          "2日目 運営パートナー"
+        ]
       },
       "logo": "images/community-logo-pycon-tw.png",
       "website": "https://tw.pycon.org/",
@@ -230,9 +261,15 @@
         "ja": "ロケットチーム 高雄エンジニア育成キャンプ\n\n台湾・高雄（Kaohsiung）に拠点を置くロケットチームのエンジニア育成キャンプは、深刻化するソフトウェアエンジニア／バックエンドエンジニア／UIデザイナーの人材需要に応えるために設計されています。\n全7カ月の集中プログラムで、受講料は無料。参加者は会場費のみご負担いただきます。\n\nロケットチームは、企業の期待に直結する実務レベルの課題解決力を備えたプロフェッショナルを育成します。\nコーチによる観察と伴走支援のもと、受講生は段階的な目標を設定し、スキルの着実な定着と成長を図ります。\n\nロケットチームに参加することで、実務さながらのプロジェクト経験を積み、職場への早期適応を実現。市場が求める高品質なエンジニアとして、即戦力としての価値を高められます。"
       },
       "category": {
-        "zh": ["第二天 籌備社群"],
-        "en": ["Day 2 Organizing Partners"],
-        "ja": ["2日目 運営パートナー"]
+        "zh": [
+          "第二天 籌備社群"
+        ],
+        "en": [
+          "Day 2 Organizing Partners"
+        ],
+        "ja": [
+          "2日目 運営パートナー"
+        ]
       },
       "logo": "images/community-logo-rocket_camp.png",
       "website": "https://www.facebook.com/profile.php?id=100039975056467",
@@ -253,9 +290,15 @@
         "ja": "マプコン最高う！"
       },
       "category": {
-        "zh": ["第二天 參加社群"],
-        "en": ["Day 2 Community Participation"],
-        "ja": ["2日目 コミュニティへの参加"]
+        "zh": [
+          "第二天 參加社群"
+        ],
+        "en": [
+          "Day 2 Community Participation"
+        ],
+        "ja": [
+          "2日目 コミュニティへの参加"
+        ]
       },
       "logo": "images/community-logo-mopcon.png",
       "website": "https://mopcon.org/2025/",
@@ -278,9 +321,15 @@
         "ja": "私たちは「匿名ネットワーク」や「インターネットの自由」に関心を持っているグループです。Tor、Tails、OONI といったツールを使用して、一般の人々にインターネットの自由の重要性を呼びかけています！現在、コミュニティメンバーを募集しており、最初の仲間を作ることを目指しています。将来的には、インターネット上で「匿名ネットワーク」の状況を定期的に共有し、更新していきたいと考えています。"
       },
       "category": {
-        "zh": ["第二天 籌備社群"],
-        "en": ["Day 2 Organizing Partners"],
-        "ja": ["2日目 運営パートナー"]
+        "zh": [
+          "第二天 籌備社群"
+        ],
+        "en": [
+          "Day 2 Organizing Partners"
+        ],
+        "ja": [
+          "2日目 運営パートナー"
+        ]
       },
       "logo": "images/community-logo-default.png",
       "website": "https://anoni.net/",
@@ -301,9 +350,15 @@
         "ja": ""
       },
       "category": {
-        "zh": ["第二天 籌備社群"],
-        "en": ["Day 2 Organizing Partners"],
-        "ja": ["2日目 運営パートナー"]
+        "zh": [
+          "第二天 籌備社群"
+        ],
+        "en": [
+          "Day 2 Organizing Partners"
+        ],
+        "ja": [
+          "2日目 運営パートナー"
+        ]
       },
       "logo": "images/community-logo-default.png",
       "website": "https://cdckh.kktix.cc",
@@ -320,18 +375,27 @@
         "ja": "Code for Taiwan"
       },
       "description": {
-        "zh": "",
-        "en": "",
-        "ja": ""
+        "zh": "我們是 Code for Taiwan，致力於普及程式思維，讓台灣的每個人都能擁有用程式思考和解決問題的能力。\n\n在這個 AI 盛行、no-code 和 low-code 工具快速發展的時代。雖然更多人能快速做出一些東西，但卻不清楚自己真正在開發什麼。我們希望改變這個現象，讓大家在投入程式開發時，能夠具備相應的思維邏輯，而不只是像玩角子老虎機一樣碰運氣。\n\n不管你是剛開始的小白工程師、PM 還是設計師，或是來自非城市地區、渴望掌握科技力量的夥伴，都能在這裡找到同伴，一起學習成長，讓科技不再是城市的專利。\n\n如同我們的名字 Code for Taiwan，我們的願景是讓台灣的每個人都能寫出好的 Code！",
+        "en": "We are Code for Taiwan, dedicated to popularizing programming thinking so that everyone in Taiwan can possess the ability to think and solve problems through code.\nIn this era where AI is prevalent and no-code and low-code tools are rapidly developing, while more people can quickly create things, they often don't clearly understand what they're actually developing. We hope to change this phenomenon, enabling everyone to possess the corresponding logical thinking when engaging in programming development, rather than just relying on luck like playing a slot machine.\nWhether you're a novice engineer just starting out, a PM, a designer, or a partner from non-urban areas eager to master the power of technology, you can find companions here to learn and grow together, ensuring that technology is no longer exclusive to cities.\nAs our name suggests, Code for Taiwan, our vision is to enable everyone in Taiwan to write good code!",
+        "ja": "私たちはCode for Taiwanです。プログラミング思考の普及に取り組み、台湾のすべての人がプログラムで考え、問題を解決する能力を持てるようにすることを目指しています。\nAIが盛んで、no-codeやlow-codeツールが急速に発展しているこの時代において、より多くの人が素早く何かを作れるようになりましたが、自分が本当に何を開発しているのか分からないことがあります。私たちはこの現象を変え、プログラム開発に取り組む際に、スロットマシンのように運任せにするのではなく、相応の論理的思考を持てるようにしたいと考えています。\n駆け出しの新米エンジニア、PM、デザイナー、または都市部以外の地域から来た、テクノロジーの力を習得したい仲間であっても、ここで仲間を見つけ、共に学び成長し、テクノロジーが都市の専売特許ではなくなるようにできます。\n私たちの名前Code for Taiwanが示すように、私たちのビジョンは台湾のすべての人が良いコードを書けるようにすることです!"
       },
       "category": {
-        "zh": ["第二天 參加社群"],
-        "en": ["Day 2 Community Participation"],
-        "ja": ["2日目 コミュニティへの参加"]
+        "zh": [
+          "第二天 參加社群"
+        ],
+        "en": [
+          "Day 2 Community Participation"
+        ],
+        "ja": [
+          "2日目 コミュニティへの参加"
+        ]
       },
-      "logo": "images/community-logo-default.png",
-      "website": "",
-      "social": {}
+      "logo": "images/community-logo-code-for-tw.png",
+      "website": "https://www.codefortaiwan.org/zh",
+      "social": {
+        "Homepage": "https://www.codefortaiwan.org/zh",
+        "Discord": "https://discord.com/invite/pRFjDXeFyv"
+      }
     },
     {
       "id": "uiux_kaohsiung",
@@ -346,9 +410,15 @@
         "ja": ""
       },
       "category": {
-        "zh": ["第二天 籌備社群"],
-        "en": ["Day 2 Organizing Partners"],
-        "ja": ["2日目 運営パートナー"]
+        "zh": [
+          "第二天 籌備社群"
+        ],
+        "en": [
+          "Day 2 Organizing Partners"
+        ],
+        "ja": [
+          "2日目 運営パートナー"
+        ]
       },
       "logo": "images/community-logo-default.png",
       "website": "",
@@ -367,30 +437,15 @@
         "ja": ""
       },
       "category": {
-        "zh": ["第二天 參加社群"],
-        "en": ["Day 2 Community Participation"],
-        "ja": ["2日目 コミュニティへの参加"]
-      },
-      "logo": "images/community-logo-default.png",
-      "website": "",
-      "social": {}
-    },
-    {
-      "id": "k_net",
-      "name": {
-        "zh": "K. NET",
-        "en": "K. NET",
-        "ja": "K. NET"
-      },
-      "description": {
-        "zh": "",
-        "en": "",
-        "ja": ""
-      },
-      "category": {
-        "zh": ["第二天 籌備社群"],
-        "en": ["Day 2 Organizing Partners"],
-        "ja": ["2日目 運営パートナー"]
+        "zh": [
+          "第二天 參加社群"
+        ],
+        "en": [
+          "Day 2 Community Participation"
+        ],
+        "ja": [
+          "2日目 コミュニティへの参加"
+        ]
       },
       "logo": "images/community-logo-default.png",
       "website": "",
@@ -409,9 +464,226 @@
         "ja": ""
       },
       "category": {
-        "zh": ["第二天 參加社群"],
-        "en": ["Day 2 Community Participation"],
-        "ja": ["2日目 コミュニティへの参加"]
+        "zh": [
+          "第二天 參加社群"
+        ],
+        "en": [
+          "Day 2 Community Participation"
+        ],
+        "ja": [
+          "2日目 コミュニティへの参加"
+        ]
+      },
+      "logo": "images/community-logo-default.png",
+      "website": "",
+      "social": {}
+    },
+    {
+      "id": "ycndc",
+      "name": {
+        "zh": "雲嘉南開發者俱樂部",
+        "en": "YCNDC",
+        "ja": "YCNDC"
+      },
+      "description": {
+        "zh": "雲林與嘉義一直缺少足夠的開發者資源，而這個社群便從這個單純的想法萌芽。\n\n我們想找出一個機會，把在地的開發者與周邊各種專業、資源、需求連接在一起，讓不同領域的人能在同一張地圖上相遇，並試著打造一條真正能流動的產業鏈。社群重視線下聚會，相信多一次見面就多一份信任與合作的可能。\n\n成員來自各地、各行各業，從地方創生到國際旅居開發者，從高中駭客到藝術設計人，大家在這裡跨界交流、激盪新火花。\n\n這裡是一個開放的實驗場，歡迎對科技、創新與合作有興趣的人加入，共同栽種未來的果實。",
+        "en": "Yunlin and Chiayi have long lacked sufficient resources for developers, and this community was born from that simple observation.\nWe aim to create opportunities to connect local developers with various professionals, resources, and needs, allowing people from different fields to meet on the same “map” and attempt to build a truly flowing industry network. The community values offline gatherings, believing that each meeting fosters trust and the possibility of collaboration.\nMembers come from diverse backgrounds—from local innovators and community builders to internationally based developers, and from high school hackers to artists and designers. Here, everyone engages in cross-disciplinary exchanges and sparks new ideas.\nThis is an open experimental space, welcoming anyone interested in technology, innovation, and collaboration to join and cultivate the fruits of the future together.",
+        "ja": "雲林と嘉義は長い間、十分な開発者リソースが不足しており、このコミュニティはその単純な課題意識から生まれました。\n私たちは、地域の開発者とさまざまな専門家、リソース、ニーズをつなぎ、異なる分野の人々が同じ“地図”上で出会い、本当に機能する産業ネットワークを築く機会を作りたいと考えています。コミュニティはオフラインでの交流を重視しており、会うことで信頼が生まれ、協力の可能性が広がると信じています。\nメンバーは多様なバックグラウンドを持ち、地域のイノベーターやコミュニティづくりに携わる人々から、海外在住の開発者、高校生ハッカー、アーティストやデザイナーまでさまざまです。ここでは、誰もが異分野交流を行い、新しいアイデアの火花を生み出します。\nここはオープンな実験の場であり、技術・イノベーション・協力に興味のある方なら誰でも参加し、未来の実りを共に育むことができます。"
+      },
+      "category": {
+        "zh": [
+          "第二天 參加社群"
+        ],
+        "en": [
+          "Day 2 Community Participation"
+        ],
+        "ja": [
+          "2日目 コミュニティへの参加"
+        ]
+      },
+      "logo": "images/community-logo-ycndc.webp",
+      "website": "https://discord.gg/ZZdnMauXZF",
+      "social": {
+        "Discord": "https://discord.gg/ZZdnMauXZF"
+      }
+    },
+    {
+      "id": "scist",
+      "name": {
+        "zh": "SCIST 南臺灣學生資訊社群",
+        "en": "SCIST",
+        "ja": "SCIST 南台湾学生ITコミュニティ"
+      },
+      "description": {
+        "zh": "SCIST 南臺灣資訊學生資訊社群創立於 2019 年，目前已邁入第六年，我們是由嘉義、台南、高雄、屏東等四地高中生組成的學生自治資訊教育社群。長期透過舉辦免費的資訊安全及演算法課程並致力於推廣資訊科技教育，期待減少南北資訊領域的資源落差，並提供一個良好的學習環境，提升南部學生整體的資訊能力。",
+        "en": "SCIST (Students' Community of Information in Southern Taiwan) is a student-led organization committed to promoting computer science education. We have been continuously offering free, in-person training programs on cybersecurity and algorithms, as well as computer science camps, for many years. providing high-quality learning opportunities to students in southern Taiwan. In addition, we create and share a wide range of online resources. Through SCIST, we aim to lower the barriers to entry, making it easier for students across Taiwan to access and begin learning computer science. Our goal is to spark interest, encourage continued engagement, and nurture the next generation of tech talent.",
+        "ja": "SCIST（Students' Community of Information in Southern Taiwan）は、コンピュータサイエンス教育の普及に取り組む学生主導の組織です。私たちは長年にわたり、サイバーセキュリティやアルゴリズムに関する無料の対面トレーニングプログラムや、コンピュータサイエンスキャンプを継続的に提供し、南台湾の学生に高品質な学習機会を届けています。さらに、幅広いオンライン教材を作成・共有しています。SCISTを通じて、コンピュータサイエンス学習の敷居を下げ、台湾全土の学生がより簡単に学習を始められるよう支援しています。私たちの目標は、興味を喚起し、継続的な学習を促し、次世代のテック人材を育成することです。"
+      },
+      "category": {
+        "zh": [
+          "第二天 參加社群"
+        ],
+        "en": [
+          "Day 2 Community Participation"
+        ],
+        "ja": [
+          "2日目 コミュニティへの参加"
+        ]
+      },
+      "logo": "images/community-logo-csist.png",
+      "website": "https://scist.org/",
+      "social": {
+        "Homepage": "https://scist.org/",
+        "Facebook": "https://www.facebook.com/scist.tw",
+        "Discord": "https://dc.scist.org/",
+        "Instagram": "https://www.instagram.com/scist.tw"
+      }
+    },
+    {
+      "id": "sticon",
+      "name": {
+        "zh": "SITCON",
+        "en": "SITCON",
+        "ja": "SITCON"
+      },
+      "description": {
+        "zh": "SITCON 學生計算機年會是台灣最大的學生資訊社群之一，自 2012 年發起，完全由學生自發籌辦與執行。我們的核心宗旨在於建立一個屬於學生的資訊技術交流平台，透過舉辦年會、夏令營與工作坊，促進跨校、跨領域的知識共享與經驗傳承。<br><br>SITCON 2026 將於 2026 年 3 月 28 日，在中央研究院人文社會科學館盛大舉行。",
+        "en": "SITCON stands for Students’ Information Technology Conference, originated in 2012 by students from various FLOSS communities. It all started from a simple idea: to hold a conference of the students, by the students, for the students. Since 2013, SITCON has become an annual conference with over 1,000 participants across Asia and sessions spanning programming, cybersecurity, game development,  and open-source communities.  SITCON strives to become the stepping portal toward the open source world, the honored stage of home-brew projects and research, and the intersection where newcomers and skilled developers collide and sparkle.<br><br>SITCON 2026 will be held on March 28, 2026, at the Humanities and Social Sciences Building, Academia Sinica.",
+        "ja": "SITCONは「Students’ Information Technology Conference」の略で、2012年に様々なFLOSSコミュニティの学生たちによって発足しました。すべては「学生による、学生のための、学生のカンファレンスを開く」という、一つのシンプルなアイデアから始まりました。2013年以降、SITCONは毎年開催されるカンファレンスとなり、アジア全域から1,000人以上が参加。プログラミング、サイバーセキュリティ、ゲーム開発、オープンソースコミュニティなど、そのセッションは多岐にわたります。SITCONは、オープンソースの世界への登竜門であり、自作プロジェクトや研究成果を発表する晴れの舞台、そして初心者と熟練開発者が出会い、互いに刺激し合う交差点となることを目指しています。<br><br>SITCON 2026は、2026年3月28日に中央研究院人文社会科学館にて盛大に開催されます。"
+      },
+      "category": {
+        "zh": [
+          "第一天 擺攤社群",
+          "第二天 參加社群"
+        ],
+        "en": [
+          "Day 1 Community Participation",
+          "Day 2 Community Participation"
+        ],
+        "ja": [
+          "1日目 コミュニティへの参加",
+          "2日目 コミュニティへの参加"
+        ]
+      },
+      "logo": "images/community-logo-sitcon.png",
+      "website": "https://sitcon.org/",
+      "social": {
+        "Homepage": "https://sitcon.org/",
+        "Facebook": "https://sitcon.org/fb",
+        "Instagram": "https://sitcon.org/ig",
+        "Telegram": "https://sitcon.org/tg"
+      }
+    },
+    {
+      "id": "sciwork",
+      "name": {
+        "zh": "sciwork",
+        "en": "sciwork",
+        "ja": "sciwork"
+      },
+      "description": {
+        "zh": "sciwork is a community of researchers and engineers to share and discuss computer code for scientific, numerical, and engineering applications. We believe in the power of openness and use open source as a means to advance software development in computational sciences.",
+        "en": "sciwork is a community of researchers and engineers to share and discuss computer code for scientific, numerical, and engineering applications. We believe in the power of openness and use open source as a means to advance software development in computational sciences.",
+        "ja": "sciwork is a community of researchers and engineers to share and discuss computer code for scientific, numerical, and engineering applications. We believe in the power of openness and use open source as a means to advance software development in computational sciences."
+      },
+      "category": {
+        "zh": [
+          "第二天 參加社群"
+        ],
+        "en": [
+          "Day 2 Community Participation"
+        ],
+        "ja": [
+          "2日目 コミュニティへの参加"
+        ]
+      },
+      "logo": "images/community-logo-default.png",
+      "website": "https://www.facebook.com/sciworkdev",
+      "social": {
+        "Twitter": "https://x.com/sciwork",
+        "Facebook": "https://www.facebook.com/sciworkdev",
+        "Threads": "https://www.threads.com/@sciworkdev",
+        "LinkedIn": "https://www.linkedin.com/company/sciwork/"
+      }
+    },
+    {
+      "id": "k_net",
+      "name": {
+        "zh": "K. NET",
+        "en": "K. NET",
+        "ja": "K. NET"
+      },
+      "description": {
+        "zh": "從高雄發芽dot NET技術社群，聚焦推廣Microsoft 相關技術，隨著潮流的變化，任何的議題交流我們都非常的歡迎，不論是 Microsofot 或非Microsoft ，每週一晚上7-9點於星巴克聚會(裕誠路-台銀隔壁)，有空可以來坐坐認識新朋友",
+        "en": "Originating in Kaohsiung, the dot.NET technology community focuses on promoting Microsoft-related technologies. We welcome discussions on any topic, whether related to Microsoft or non-Microsoft. We meet every Monday evening from 7-9 PM at Starbucks (Yucheng Road, next to the Bank of Taiwan). Feel free to come and meet new friends!",
+        "ja": "高雄発祥のdot.NETテクノロジーコミュニティは、Microsoft関連テクノロジーの普及に重点を置いています。Microsoft関連、非Microsoft関連を問わず、あらゆるトピックでの議論を歓迎します。毎週月曜日の午後7時から9時まで、スターバックス（豫城路、台湾銀行隣）で会合を開いています。ぜひお気軽にお越しいただき、新しい仲間を見つけてください！"
+      },
+      "category": {
+        "zh": [
+          "第二天 籌備社群"
+        ],
+        "en": [
+          "Day 2 Organizing Partners"
+        ],
+        "ja": [
+          "2日目 運営パートナー"
+        ]
+      },
+      "logo": "images/community-logo-knet.jpg",
+      "website": "https://www.facebook.com/k.net.io",
+      "social": {
+        "Facebook": "https://www.facebook.com/k.net.io"
+      }
+    },
+       {
+      "id": "second_space",
+      "name": {
+        "zh": "Second Space",
+        "en": "Second Space",
+        "ja": "Second Space"
+      },
+      "description": {
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "category": {
+        "zh": [
+          "第二天 參加社群"
+        ],
+        "en": [
+          "Day 2 Community Participation"
+        ],
+        "ja": [
+          "2日目 コミュニティへの参加"
+        ]
+      },
+      "logo": "images/community-logo-default.png",
+      "website": "",
+      "social": {}
+    },
+           {
+      "id": "wordpress_taiwan",
+      "name": {
+        "zh": "WordPress 台灣社群",
+        "en": "WordPress 台灣社群",
+        "ja": "WordPress 台灣社群"
+      },
+      "description": {
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "category": {
+        "zh": [
+          "第二天 參加社群"
+        ],
+        "en": [
+          "Day 2 Community Participation"
+        ],
+        "ja": [
+          "2日目 コミュニティへの参加"
+        ]
       },
       "logo": "images/community-logo-default.png",
       "website": "",
