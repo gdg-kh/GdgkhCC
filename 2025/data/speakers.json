@@ -45,7 +45,12 @@
         "track": "track2",
         "session_id": "d1_t5_s2_title"
       },
-      "tags": ["中文議程", "Android", "Gemini", "AI"],
+      "tags": [
+        "中文議程",
+        "Android",
+        "Gemini",
+        "AI"
+      ],
       "photo": "images/speak-ray_yuan_liu.png",
       "social": {
         "Homepage": "https://louis383.medium.com/",
@@ -97,7 +102,12 @@
         "track": "track1",
         "session_id": "d1_t6_s1_title"
       },
-      "tags": ["中文議程", "生成式AI", "AI知識庫", "數位轉型"],
+      "tags": [
+        "中文議程",
+        "生成式AI",
+        "AI知識庫",
+        "數位轉型"
+      ],
       "photo": "images/speak-leo_he.png",
       "social": {
         "Linkedin": "https://www.linkedin.com/in/leo-he-392338173/"
@@ -148,7 +158,12 @@
         "track": "track2",
         "session_id": "d1_t6_s2_title"
       },
-      "tags": ["English Session", "Android", "AI", "XP"],
+      "tags": [
+        "English Session",
+        "Android",
+        "AI",
+        "XP"
+      ],
       "photo": "images/speak-matthias_geisler.png",
       "social": {}
     },
@@ -197,7 +212,12 @@
         "track": "track1",
         "session_id": "d1_t7_s1_title"
       },
-      "tags": ["中文議程", "教育", "Gemini", "科技藝術"],
+      "tags": [
+        "中文議程",
+        "教育",
+        "Gemini",
+        "科技藝術"
+      ],
       "photo": "images/speak-yung_chun.png",
       "social": {
         "Linkedin": "https://www.linkedin.com/in/%E7%89%B9-%E7%93%A6-7a345224b/",
@@ -249,7 +269,12 @@
         "track": "track2",
         "session_id": "d1_t9_s2_title"
       },
-      "tags": ["中文議程", "AI", "Gemini", "Android"],
+      "tags": [
+        "中文議程",
+        "AI",
+        "Gemini",
+        "Android"
+      ],
       "photo": "images/speak-kevin_chiu.png",
       "social": {
         "Linkedin": "www.linkedin.com/in/kevin-chiu-612a61189"
@@ -300,7 +325,12 @@
         "track": "track1",
         "session_id": "d1_t10_s1_title"
       },
-      "tags": ["中文議程", "ADK", "Gemini", "Agent"],
+      "tags": [
+        "中文議程",
+        "ADK",
+        "Gemini",
+        "Agent"
+      ],
       "photo": "images/speak-simon_liu.png",
       "social": {
         "Homepage": "https://simonliuyuwei.my.canva.site/link-in-bio",
@@ -354,7 +384,12 @@
         "track": "track1",
         "session_id": "d1_t5_s1_title"
       },
-      "tags": ["English Session", "Robotics", "Firebase", "Google Cloud"],
+      "tags": [
+        "English Session",
+        "Robotics",
+        "Firebase",
+        "Google Cloud"
+      ],
       "photo": "images/speak-arturs_vancans.png",
       "social": {
         "Homepage": "https://www.secondspace.dev/kubi-robot",
@@ -406,7 +441,12 @@
         "track": "track1",
         "session_id": "d1_t7_s2_title"
       },
-      "tags": ["中文議程", "零知識證明", "數位身分", "Google Wallet"],
+      "tags": [
+        "中文議程",
+        "零知識證明",
+        "數位身分",
+        "Google Wallet"
+      ],
       "photo": "images/speak-denken_chen.png",
       "social": {
         "Homepage": "https://denkeni.org"
@@ -457,116 +497,16 @@
         "track": "track1",
         "session_id": "d1_t9_s1_title"
       },
-      "tags": ["中文議程", "UI", "UX", "設計工程"],
+      "tags": [
+        "中文議程",
+        "UI",
+        "UX",
+        "設計工程"
+      ],
       "photo": "images/speak-steve_yeh.png",
       "social": {
         "Facebook": "https://www.facebook.com/steven.yeh",
         "Medium": "https://medium.com/@stevenyeh"
-      }
-    },
-    {
-      "id": "simon_liu_2",
-      "name": {
-        "zh": "劉育維 / Simon Liu",
-        "en": "Simon Liu",
-        "ja": "Simon Liu"
-      },
-      "org": {
-        "zh": "APMIC / Google 開發者專家 - AI",
-        "en": "APMIC / Google Developer Expert - AI",
-        "ja": "APMIC / Google Developer Expert - AI"
-      },
-      "title": {
-        "zh": "MLOps Engineer",
-        "en": "MLOps Engineer",
-        "ja": "MLOps Engineer"
-      },
-      "topic_category": {
-        "zh": "第二屆 AI 生成大賽",
-        "en": "The 2nd AI Generative Contest",
-        "ja": "第2回 AI 生成コンテスト"
-      },
-      "bio": {
-        "zh": "大家好，我是 Simon 劉育維，過去曾擔任過電信業的資深工程師和 在軟體業擔任客戶技術成功工程師，幫助各大知名企業進行機器學習、深度學習、大型語言模型等人工智慧議題進行人工智慧架構規劃的討論，目前在 Medium 上已經公開超過百篇技術文章，我希望能夠嘗試使用 AI 做應用，幫助客戶用 AI 解決痛點。",
-        "en": "Hello everyone, I am Simon Liu Yu-Wei. I previously worked as a Senior Engineer in the telecommunications industry and as a Customer Technical Success Engineer in the software industry, where I helped well-known major enterprises discuss and plan AI architecture for topics such as Machine Learning, Deep Learning, and Large Language Models. I have currently published over a hundred technical articles on Medium. My goal is to experiment with AI applications to help clients solve pain points using AI.",
-        "ja": "皆様、こんにちは。Simon 劉育維です。以前は通信業界でシニアエンジニアとして、またソフトウェア業界でカスタマーテクニカルサクセスエンジニアとして勤務し、大手有名企業に対し、機械学習、深層学習、大規模言語モデルなどの人工知能（AI）に関するAI アーキテクチャ計画の策定を支援してきました。現在、Medium には100本以上の技術記事を公開しています。私の目標は、AI を活用したアプリケーションを試行し、クライアントが AI を使って課題を解決できるように支援することです。"
-      },
-      "session": {
-        "name": {
-          "zh": "從 Google Stitch 到 Google Firebase Studio - AI-First Coding 平台撰寫",
-          "en": "From Google Stitch to Google Firebase Studio - Writing the AI-First Coding Platform",
-          "ja": "Google Stitch から Google Firebase Studio へ - AI-First コーディングプラットフォームを記述する"
-        },
-        "abstract": {
-          "zh": "透過 Google 一系列的平台工具，讓大家可以從過去的想像，變成現在實際的樣貌，你可以在這個議程中了解到：<br>1. 透過 Google Stitch 了解到如何進行 UI/UX 的規劃<br>2. 透過 Google Firebase Studio 來進行平台建置，並且說明如何進行修改<br><br>Hope you enjoy the workshop!",
-          "en": "Through a series of platform tools from Google, we can transform past visions into current reality. In this session, you will learn:<br>1. How to use Google Stitch for UI/UX planning.<br>2. How to build a platform using Google Firebase Studio and how to make modifications.<br><br>Hope you enjoy the workshop!",
-          "ja": "Google の一連のプラットフォームツールを通じて、過去の構想を現在の実際の形へと変える方法をご紹介します。このセッションでは、以下の点について学べます：<br>1. Google Stitch を通じて、UI/UX のプランニングをどのように行うか。<br>2. Google Firebase Studio を使ってプラットフォームを構築する方法、および変更を行う方法について。<br><br>ワークショップを楽しんでください！"
-        }
-      },
-      "schedule": {
-        "day": 2,
-        "time": "12:30 - 14:00",
-        "track": "track2",
-        "session_id": "d2_t4_s2_title"
-      },
-      "tags": ["中文議程", "Firebase", "Stitch", "AI"],
-      "photo": "images/speak-simon_liu.png",
-      "social": {
-        "Homepage": "https://simonliuyuwei.my.canva.site/link-in-bio",
-        "Linkedin": "https://www.linkedin.com/in/simonliuyuwei/",
-        "GitHub": "https://github.com/LiuYuWei",
-        "Medium": "https://medium.com/@simon3458"
-      }
-    },
-    {
-      "id": "kevin_chiu_2",
-      "name": {
-        "zh": "邱哲綸 / Kevin Chiu",
-        "en": "Kevin Chiu",
-        "ja": "Kevin Chiu"
-      },
-      "org": {
-        "zh": "GDG 台北 / Google 開發者專家 - AI",
-        "en": "GDG Taipei / Google Developer Expert - AI",
-        "ja": "GDG Taipei / Google Developer Expert - AI"
-      },
-      "title": {
-        "zh": "GDG 台北 組織者 / AI GDE",
-        "en": "GDG Taipei Organizer / AI GDE",
-        "ja": "GDG Taipei Organizer / AI GDE"
-      },
-      "topic_category": {
-        "zh": "第二屆 AI 生成大賽",
-        "en": "The 2nd AI Generative Contest",
-        "ja": "第2回 AI 生成コンテスト"
-      },
-      "bio": {
-        "zh": "AI GDE / GDG 台北 組織者 / Android 工程師<br>致力於將 AI 導到在 edge 端上使用",
-        "en": "AI GDE / GDG Taipei Organizer / Android Engineer<br>Committed to bringing AI for use on the edge.",
-        "ja": "AI GDE / GDG Taipei オーガナイザー / Android エンジニア<br>エッジでの AI 利用の実現に尽力。"
-      },
-      "session": {
-        "name": {
-          "zh": "Vertex AI 多媒體：用 Veo 3 和 Image 4，與您『1314』共創視覺未來",
-          "en": "【The 2nd AI Generative Contest】Vertex AI Multimedia: Creating the Visual Future with Imagen 4 and Veo 3, Hand-in-Hand ('1314')",
-          "ja": "【第2回 AI 生成コンテスト】Vertex AI マルチメディア：Veo 3 および Imagen 4 と共に『1314』ビジュアルの未来を共創"
-        },
-        "abstract": {
-          "zh": "。什麼是 Vertex AI 上的 Imagen / Veo？<br>。深入了解 Imagen 4：功能與實例<br>。探索 Veo 3 ：強大的創作力",
-          "en": "• What are Imagen and Veo on Vertex AI?<br>• Deep Dive into Imagen 4: Features and Examples<br>• Exploring Veo 3: Powerful Creative Capability",
-          "ja": "• Vertex AI の Imagen / Veo とは何ですか？<br>• Imagen 4 の詳細：機能と実例<br>• Veo 3 の探求：強力な創造力<br><br>(注:『1314』は中国語のネット文化で「一生一世（永遠に）」を意味する発音の語呂合わせであり、長期的な共創を表しています。)"
-        }
-      },
-      "schedule": {
-        "day": 2,
-        "time": "14:30 - 16:00",
-        "track": "track2",
-        "session_id": "d2_t5_s2_title"
-      },
-      "tags": ["中文議程", "AI", "Gemini", "Android"],
-      "photo": "images/speak-kevin_chiu.png",
-      "social": {
-        "Linkedin": "www.linkedin.com/in/kevin-chiu-612a61189"
       }
     },
     {
@@ -614,11 +554,130 @@
         "track": "track1",
         "session_id": "d1_t11_s1_title"
       },
-      "tags": ["AI", "Agent", "A2A"],
+      "tags": [
+        "AI",
+        "Agent",
+        "A2A"
+      ],
       "photo": "images/speak-aaron_ng.png",
       "social": {
         "Linkedin": "https://www.linkedin.com/in/liren0907",
         "Facebook": "https://www.facebook.com/liren0907"
+      }
+    },
+    {
+      "id": "kevin_chiu_2",
+      "name": {
+        "zh": "邱哲綸 / Kevin Chiu",
+        "en": "Kevin Chiu",
+        "ja": "Kevin Chiu"
+      },
+      "org": {
+        "zh": "GDG 台北 / Google 開發者專家 - AI",
+        "en": "GDG Taipei / Google Developer Expert - AI",
+        "ja": "GDG Taipei / Google Developer Expert - AI"
+      },
+      "title": {
+        "zh": "GDG 台北 組織者 / AI GDE",
+        "en": "GDG Taipei Organizer / AI GDE",
+        "ja": "GDG Taipei Organizer / AI GDE"
+      },
+      "topic_category": {
+        "zh": "第二屆 AI 生成大賽",
+        "en": "The 2nd AI Generative Contest",
+        "ja": "第2回 AI 生成コンテスト"
+      },
+      "bio": {
+        "zh": "AI GDE / GDG 台北 組織者 / Android 工程師<br>致力於將 AI 導到在 edge 端上使用",
+        "en": "AI GDE / GDG Taipei Organizer / Android Engineer<br>Committed to bringing AI for use on the edge.",
+        "ja": "AI GDE / GDG Taipei オーガナイザー / Android エンジニア<br>エッジでの AI 利用の実現に尽力。"
+      },
+      "session": {
+        "name": {
+          "zh": "AI 魔法學院：用 Gemini 點石成金，人人都是創意家！",
+          "en": "AI Magic Academy: Using Gemini to Turn Lead into Gold—Everyone Can Be a Creator!",
+          "ja": "AI 魔法アカデミー：Gemini で石を黄金に変え、誰もがクリエイターに！"
+        },
+        "abstract": {
+          "zh": "Nano Banana 是由 Google 開發的頂級 AI 圖像生成與編輯模型。這個有趣的代號（Nano Banana）是它在發佈前測試階段所使用的名稱，因其強大功能而爆紅，現已成為 Gemini 系列 AI 產品的一部分。",
+          "en": "Nano Banana is a top-tier AI image generation and editing model developed by Google. This interesting code name (Nano Banana) was used during its pre-release testing phase. It went viral due to its powerful capabilities and has now become part of the Gemini series of AI products.",
+          "ja": "Nano Banana は、Google によって開発された最高レベルの AI 画像生成・編集モデルです。この興味深いコードネーム（Nano Banana）は、リリース前のテスト段階で使用されていた名称で、その強力な機能によって話題となり、現在は Gemini シリーズの AI 製品の一部となっています。"
+        }
+      },
+      "schedule": {
+        "day": 2,
+        "time": "14:30 - 16:00",
+        "track": "track2",
+        "session_id": "d2_t5_s2_title"
+      },
+      "tags": [
+        "中文議程",
+        "AI",
+        "Gemini",
+        "Android"
+      ],
+      "photo": "images/speak-kevin_chiu.png",
+      "social": {
+        "Linkedin": "www.linkedin.com/in/kevin-chiu-612a61189"
+      }
+    },
+    {
+      "id": "simon_liu_2",
+      "name": {
+        "zh": "劉育維 / Simon Liu",
+        "en": "Simon Liu",
+        "ja": "Simon Liu"
+      },
+      "org": {
+        "zh": "APMIC / Google 開發者專家 - AI",
+        "en": "APMIC / Google Developer Expert - AI",
+        "ja": "APMIC / Google Developer Expert - AI"
+      },
+      "title": {
+        "zh": "MLOps Engineer",
+        "en": "MLOps Engineer",
+        "ja": "MLOps Engineer"
+      },
+      "topic_category": {
+        "zh": "第二屆 AI 生成大賽",
+        "en": "The 2nd AI Generative Contest",
+        "ja": "第2回 AI 生成コンテスト"
+      },
+      "bio": {
+        "zh": "大家好，我是 Simon 劉育維，過去曾擔任過電信業的資深工程師和 在軟體業擔任客戶技術成功工程師，幫助各大知名企業進行機器學習、深度學習、大型語言模型等人工智慧議題進行人工智慧架構規劃的討論，目前在 Medium 上已經公開超過百篇技術文章，我希望能夠嘗試使用 AI 做應用，幫助客戶用 AI 解決痛點。",
+        "en": "Hello everyone, I am Simon Liu Yu-Wei. I previously worked as a Senior Engineer in the telecommunications industry and as a Customer Technical Success Engineer in the software industry, where I helped well-known major enterprises discuss and plan AI architecture for topics such as Machine Learning, Deep Learning, and Large Language Models. I have currently published over a hundred technical articles on Medium. My goal is to experiment with AI applications to help clients solve pain points using AI.",
+        "ja": "皆様、こんにちは。Simon 劉育維です。以前は通信業界でシニアエンジニアとして、またソフトウェア業界でカスタマーテクニカルサクセスエンジニアとして勤務し、大手有名企業に対し、機械学習、深層学習、大規模言語モデルなどの人工知能（AI）に関するAI アーキテクチャ計画の策定を支援してきました。現在、Medium には100本以上の技術記事を公開しています。私の目標は、AI を活用したアプリケーションを試行し、クライアントが AI を使って課題を解決できるように支援することです。"
+      },
+      "session": {
+        "name": {
+          "zh": "從 Google Stitch 到 Google Gemini 3 Pro Preview - Data Dashboard 呈現生成大賽",
+          "en": "From Google Stitch to Google Gemini 3 Pro Preview - Data Dashboard Showcase in the Generative Competition",
+          "ja": "Google Stitch から Google Gemini 3 Pro Preview へ - データダッシュボードの成果発表コンペティション"
+        },
+        "abstract": {
+          "zh": "透過 Google 一系列的平台工具，讓大家可以從過去的想像，變成現在實際的樣貌。<br><br>你可以在這個議程中了解到：<br>1. 透過 Google Stitch 了解到如何進行 UI/UX 的規劃<br>2. Google Gemini 3 Pro Preview 的更新以及他帶來的威力<br>3. 透過 Google AI Studio Build 或者 Google Antigravity ，讓大家可以將資料以自己想要的方式，呈現在 UI 上（會依照現場的參與者組成狀況，來決定使用哪種工具）<br><br>本次活動內容流程：<br>1. 預計會使用 20 - 25 分鐘時間講解 Google Stitch、Google Gemini 3 Pro Preview 、Google AI Studio Build 、 Google Antigravity <br>2. 讓大家用 45 分鐘的時間，嘗試使用 Google AI Studio Build 、 Google Antigravity 來去製作自己的 Dashboard<br>3. 最後 10-15 分鐘，會讓大家講解你所製作出來的樣子，並且頒獎給有上台和有創意的參與者。<br><br>Hope you enjoy the workshop!",
+          "en": "Bringing Imagination to Reality with Google's Platform Tools<br>Through Google's series of platform tools, we can transform past imaginations into tangible, current realities.<br><br>In this session, you will learn about:<br>1. How to perform UI/UX planning using Google Stitch.<br>2. Updates on Google Gemini 3 Pro Preview and the power it brings.<br>3. How to use Google AI Studio Build or Google Antigravity to display your data on the UI in your desired way (the specific tool used will depend on the composition of the on-site participants).<br><br>Workshop Flow:<br>1. An estimated 20 - 25 minutes will be spent explaining Google Stitch, Google Gemini 3 Pro Preview, Google AI Studio Build, and Google Antigravity.<br>2. Participants will have 45 minutes to try creating their own Dashboard using Google AI Studio Build or Google Antigravity.<br>3. In the final 10 - 15 minutes, participants will present their created dashboards, and awards will be given to those who present and those who show creativity.<br><br>Hope you enjoy the workshop!",
+          "ja": "Google の一連のプラットフォームツールを通じて、過去の想像を現在の具体的な形へ<br>Google の一連のプラットフォームツールを通じて、皆さんの過去の想像を現在の具体的な姿へと変えることができます。<br><br>このセッションで学べること：<br>1. Google Stitch を通じて、UI/UX の計画をどのように進めるかを理解する。<br>2. Google Gemini 3 Pro Preview の最新情報とそれがもたらす力。<br>3. Google AI Studio Build または Google Antigravity を使用して、データを思い通りに UI に表示する方法（使用する具体的なツールは、現場の参加者の構成に基づいて決定します）。<br>本イベントの進行スケジュール：<br>1. 20〜25分間をかけて、Google Stitch、Google Gemini 3 Pro Preview、Google AI Studio Build、Google Antigravity について解説する予定です。<br>2. 参加者の皆様に 45分間で、Google AI Studio Build または Google Antigravity を使用してご自身の Dashboard を作成していただきます。<br>3. 最後の 10〜15分間で、作成したダッシュボードを発表していただき、登壇した方やクリエイティブな参加者に賞を授与します。<br><br>ワークショップを楽しんでください！"
+        }
+      },
+      "schedule": {
+        "day": 2,
+        "time": "12:30 - 14:00",
+        "track": "track2",
+        "session_id": "d2_t4_s2_title"
+      },
+      "tags": [
+        "中文議程",
+        "Firebase",
+        "Stitch",
+        "AI"
+      ],
+      "photo": "images/speak-simon_liu.png",
+      "social": {
+        "Homepage": "https://simonliuyuwei.my.canva.site/link-in-bio",
+        "Linkedin": "https://www.linkedin.com/in/simonliuyuwei/",
+        "GitHub": "https://github.com/LiuYuWei",
+        "Medium": "https://medium.com/@simon3458"
       }
     }
   ]
