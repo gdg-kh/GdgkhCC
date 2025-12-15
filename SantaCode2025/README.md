@@ -9,14 +9,14 @@ Welcome to the Programmer's Secret Santa!
     Write a program that prints a Christmas tree to stdout.
 2.  **語言 (Languages)**: 支援 Python, JavaScript (Node.js), Go, Ruby, Rust, C, C++, C#, Java, Kotlin, Swift (只要能用標準 Docker Image 跑起來)。
 3.  **限制 (Constraints)**:
-    *   **NO Internet**: 執行環境沒有網路。
-    *   **Standard Library Only**: 禁止安裝第三方套件 (`npm install`, `pip install` ... etc are NOT allowed)。
-    *   **Time Limit**: 5 秒內必須執行完畢。
+    - **NO Internet**: 執行環境沒有網路。
+    - **Standard Library Only**: 禁止安裝第三方套件 (`npm install`, `pip install` ... etc are NOT allowed)。
+    - **Time Limit**: 5 秒內必須執行完畢。
 4.  **如何參加 (How to Join)**:
-    *   Fork 這個 Repo。
-    *   在 `submissions/` 下建立一個你的 **GitHub ID** 資料夾 (e.g., `submissions/torvalds/`).
-    *   放入你的程式碼 (e.g., `tree.py`).
-    *   發送 Pull Request。
+    - Fork 這個 Repo。
+    - 在 `submissions/` 下建立一個你的 **GitHub ID** 資料夾 (e.g., `submissions/torvalds/`).
+    - 放入你的程式碼 (e.g., `tree.py`).
+    - 發送 Pull Request。
 
 ## 🧪 本地測試 (Local Test)
 
