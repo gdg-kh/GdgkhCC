@@ -1,123 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SantaCode 2025</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Language Switcher -->
     <div class="lang-switch">
-        <button class="lang-btn" data-lang="zh-TW">繁中</button>
-        <button class="lang-btn" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="ja">日本語</button>
+      <button class="lang-btn" data-lang="zh-TW">繁中</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="ja">日本語</button>
     </div>
 
     <!-- Falling Snow -->
     <div class="snowflakes" aria-hidden="true">
-        <div class="snowflake">❅</div><div class="snowflake">❆</div><div class="snowflake">❅</div>
-        <div class="snowflake">❆</div><div class="snowflake">❅</div><div class="snowflake">❆</div>
-        <div class="snowflake">❅</div><div class="snowflake">❆</div><div class="snowflake">❅</div>
-        <div class="snowflake">❆</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
     </div>
 
     <div class="container">
-        <header>
-            <div class="ascii-art">
-        *
-       /|\
-      /*|*\
-     /|*|*|*\
-    /|*|*|*|*\
-   /|*|*|*|*|*\
-      | | |
-   [SantaCode]
-            </div>
-            <h1 data-i18n="title">SantaCode 2025</h1>
-            <p data-i18n="subtitle">> Programmer's Secret Santa Event initialized...</p>
-        </header>
+      <header>
+        <div class="ascii-art">* /|\ /*|*\ /|*|*|*\ /|*|*|*|*\ /|*|*|*|*|*\ | | | [SantaCode]</div>
+        <h1 data-i18n="title">SantaCode 2025</h1>
+        <p data-i18n="subtitle">> Programmer's Secret Santa Event initialized...</p>
+      </header>
 
-        <section id="mission">
-            <h2 data-i18n="mission_title">🎯 The Mission</h2>
-            <p data-i18n="mission_desc_1">Welcome to the Programmer's Secret Santa!</p>
-            <p data-i18n="mission_desc_2">Your mission is to write a program that prints a **Christmas tree** to the screen.</p>
-            <p data-i18n="mission_desc_3">After the event, the system will swap code snippets. You will receive a tree planted by a secret santa in your terminal!</p>
-        </section>
+      <section id="mission">
+        <h2 data-i18n="mission_title">🎯 The Mission</h2>
+        <p data-i18n="mission_desc_1">Welcome to the Programmer's Secret Santa!</p>
+        <p data-i18n="mission_desc_2">
+          Your mission is to write a program that prints a **Christmas tree** to the screen.
+        </p>
+        <p data-i18n="mission_desc_3">
+          After the event, the system will swap code snippets. You will receive a tree planted by a
+          secret santa in your terminal!
+        </p>
+      </section>
 
-        <section id="rules">
-            <h2 data-i18n="rules_title">⚠️ System Constraints</h2>
-            <p data-i18n="rules_desc">To ensure everyone's safety, we strictly enforce:</p>
-            <ul>
-                <li data-i18n="rule_1"><strong>No Internet</strong>: Offline environment.</li>
-                <li data-i18n="rule_2"><strong>Std Lib Only</strong>: No third-party packages.</li>
-                <li data-i18n="rule_3"><strong>Timeout</strong>: Max 5 seconds execution.</li>
-                <li data-i18n="rule_4"><strong>Output</strong>: Print to stdout.</li>
-                <li data-i18n="rule_5"><strong>ID Match</strong>: Folder name must match your GitHub ID.</li>
-            </ul>
-        </section>
+      <section id="rules">
+        <h2 data-i18n="rules_title">⚠️ System Constraints</h2>
+        <p data-i18n="rules_desc">To ensure everyone's safety, we strictly enforce:</p>
+        <ul>
+          <li data-i18n="rule_1"><strong>No Internet</strong>: Offline environment.</li>
+          <li data-i18n="rule_2"><strong>Std Lib Only</strong>: No third-party packages.</li>
+          <li data-i18n="rule_3"><strong>Timeout</strong>: Max 5 seconds execution.</li>
+          <li data-i18n="rule_4"><strong>Output</strong>: Print to stdout.</li>
+          <li data-i18n="rule_5">
+            <strong>ID Match</strong>: Folder name must match your GitHub ID.
+          </li>
+        </ul>
+      </section>
 
-        <section id="how-to">
-            <h2 data-i18n="join_title">🚀 How to Join</h2>
-            
-            <div class="step">
-                <div class="step-num">1</div>
-                <div>
-                    <strong data-i18n="step_1_title">Fork Repo</strong><br>
-                    <span data-i18n="step_1_desc">Fork this project to your GitHub.</span>
-                </div>
-            </div>
+      <section id="how-to">
+        <h2 data-i18n="join_title">🚀 How to Join</h2>
 
-            <div class="step">
-                <div class="step-num">2</div>
-                <div>
-                    <strong data-i18n="step_2_title">Create Directory</strong><br>
-                    <span data-i18n="step_2_desc">Create a folder `submissions/YOUR_ID/`.</span>
-                </div>
-            </div>
+        <div class="step">
+          <div class="step-num">1</div>
+          <div>
+            <strong data-i18n="step_1_title">Fork Repo</strong><br />
+            <span data-i18n="step_1_desc">Fork this project to your GitHub.</span>
+          </div>
+        </div>
 
-            <div class="step">
-                <div class="step-num">3</div>
-                <div>
-                    <strong data-i18n="step_3_title">Write Code</strong><br>
-                    <span data-i18n="step_3_desc">Place your code (e.g., `tree.py`).</span>
-                </div>
-            </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div>
+            <strong data-i18n="step_2_title">Create Directory</strong><br />
+            <span data-i18n="step_2_desc">Create a folder `submissions/YOUR_ID/`.</span>
+          </div>
+        </div>
 
-            <div class="step">
-                <div class="step-num">4</div>
-                <div>
-                    <strong data-i18n="step_4_title">Pull Request</strong><br>
-                    <span data-i18n="step_4_desc">Send PR. Wait for Green Check ✅.</span>
-                </div>
-            </div>
-        </section>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div>
+            <strong data-i18n="step_3_title">Write Code</strong><br />
+            <span data-i18n="step_3_desc">Place your code (e.g., `tree.py`).</span>
+          </div>
+        </div>
 
-        <section id="tech-stack">
-            <h2 data-i18n="runtimes_title">💾 Supported Runtimes</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 10px;">
-                <code>.py (Python 3.10)</code>
-                <code>.js (Node 18)</code>
-                <code>.go (Go 1.20)</code>
-                <code>.rb (Ruby 3.2)</code>
-                <code>.sh (Alpine Shell)</code>
-                <code>.java (OpenJDK 17)</code>
-                <code>.kt (Kotlin 1.8)</code>
-                <code>.swift (Swift 5.8)</code>
-                <code>.c (GCC 12)</code>
-                <code>.cpp (G++ 12)</code>
-                <code>.cs (Mono 6.12)</code>
-                <code>.rs (Rust)</code>
-            </div>
-        </section>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div>
+            <strong data-i18n="step_4_title">Pull Request</strong><br />
+            <span data-i18n="step_4_desc">Send PR. Wait for Green Check ✅.</span>
+          </div>
+        </div>
+      </section>
 
-        <footer>
-            <p>Running on GitHub Actions & Docker</p>
-            <p><span data-i18n="footer_status">Status: WAITING_FOR_SUBMISSIONS</span></p>
-        </footer>
+      <section id="tech-stack">
+        <h2 data-i18n="runtimes_title">💾 Supported Runtimes</h2>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 10px;
+          "
+        >
+          <code>.py (Python 3.10)</code>
+          <code>.js (Node 18)</code>
+          <code>.go (Go 1.20)</code>
+          <code>.rb (Ruby 3.2)</code>
+          <code>.sh (Alpine Shell)</code>
+          <code>.java (OpenJDK 17)</code>
+          <code>.kt (Kotlin 1.8)</code>
+          <code>.swift (Swift 5.8)</code>
+          <code>.c (GCC 12)</code>
+          <code>.cpp (G++ 12)</code>
+          <code>.cs (Mono 6.12)</code>
+          <code>.rs (Rust)</code>
+        </div>
+      </section>
+
+      <footer>
+        <p>Running on GitHub Actions & Docker</p>
+        <p><span data-i18n="footer_status">Status: WAITING_FOR_SUBMISSIONS</span></p>
+      </footer>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
