@@ -1,0 +1,19 @@
+# SantaCode Configuration
+
+event:
+  name: "SantaCode 2025"
+  year: 2025
+  description: "Programmer's Secret Santa - Christmas Tree Edition"
+  accepting_submissions: true # Set to false to stop new submissions
+
+challenge:
+  # The directory name under 'challenges/'
+  id: "2025-tree" 
+  # Time limit for execution in seconds
+  timeout_seconds: 5
+  # Memory limit for the container
+  memory_limit: "512m"
+
+paths:
+  submissions: "submissions"
+  history: "history"

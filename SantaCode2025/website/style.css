@@ -1,0 +1,189 @@
+:root {
+    --bg-color: #0d1117;
+    --text-color: #58a6ff;
+    --accent-color: #ff7b72; /* Red */
+    --success-color: #3fb950; /* Green */
+    --border-color: #30363d;
+    --term-font: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--term-font);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+    z-index: 10;
+}
+
+/* Header & ASCII Art */
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+h1 {
+    color: var(--accent-color);
+    text-shadow: 0 0 10px rgba(255, 123, 114, 0.5);
+}
+
+.ascii-art {
+    color: var(--success-color);
+    font-size: 14px;
+    white-space: pre;
+    line-height: 1.2;
+    margin: 20px 0;
+    font-weight: bold;
+    text-shadow: 0 0 5px var(--success-color);
+}
+
+/* Sections */
+section {
+    margin-bottom: 3rem;
+    background: rgba(22, 27, 34, 0.8);
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+h2 {
+    color: #e6edf3;
+    border-left: 4px solid var(--success-color);
+    padding-left: 10px;
+    margin-top: 0;
+}
+
+/* Code Blocks */
+code {
+    background: rgba(110, 118, 129, 0.4);
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 0.9em;
+    color: #e6edf3;
+}
+
+pre {
+    background: #010409;
+    padding: 1rem;
+    overflow-x: auto;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    color: #c9d1d9;
+}
+
+/* Steps */
+.step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.step-num {
+    background: var(--accent-color);
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 2rem;
+    color: #8b949e;
+    font-size: 0.8rem;
+}
+
+/* Snow Effect */
+.snowflake {
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial;
+    text-shadow: 0 0 1px #000;
+    position: fixed;
+    top: -10%;
+    z-index: 1;
+    user-select: none;
+    cursor: default;
+    animation-name: snowflakes-fall, snowflakes-shake;
+    animation-duration: 10s, 3s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+    animation-play-state: running, running;
+}
+
+/* Language Switcher */
+.lang-switch {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    display: flex;
+    gap: 10px;
+}
+
+.lang-btn {
+    background: rgba(22, 27, 34, 0.8);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: var(--term-font);
+    font-size: 0.9em;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.lang-btn:hover {
+    border-color: var(--text-color);
+    background: rgba(48, 54, 61, 0.8);
+}
+
+.lang-btn.active {
+    background: var(--success-color);
+    color: #0d1117;
+    border-color: var(--success-color);
+    font-weight: bold;
+}
+
+@keyframes snowflakes-fall {
+    0% { top: -10%; }
+    100% { top: 100%; }
+}
+
+@keyframes snowflakes-shake {
+    0% { transform: translateX(0px); }
+    50% { transform: translateX(80px); }
+    100% { transform: translateX(0px); }
+}
+
+/* Generate different positions/delays for snowflakes via Nth-child in CSS is tedious, 
+   usually handled by JS, but we can hardcode a few for pure CSS effect */
+.snowflake:nth-of-type(1) { left: 1%; animation-delay: 0s, 0s; }
+.snowflake:nth-of-type(2) { left: 10%; animation-delay: 1s, 1s; }
+.snowflake:nth-of-type(3) { left: 20%; animation-delay: 6s, .5s; }
+.snowflake:nth-of-type(4) { left: 30%; animation-delay: 4s, 2s; }
+.snowflake:nth-of-type(5) { left: 40%; animation-delay: 2s, 2s; }
+.snowflake:nth-of-type(6) { left: 50%; animation-delay: 8s, 3s; }
+.snowflake:nth-of-type(7) { left: 60%; animation-delay: 6s, 2s; }
+.snowflake:nth-of-type(8) { left: 70%; animation-delay: 2.5s, 1s; }
+.snowflake:nth-of-type(9) { left: 80%; animation-delay: 1s, 0s; }
+.snowflake:nth-of-type(10) { left: 90%; animation-delay: 3s, 1.5s; }

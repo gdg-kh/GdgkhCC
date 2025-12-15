@@ -1,0 +1,97 @@
+name: Verify Submission
+
+on:
+  pull_request:
+    paths:
+      - 'submissions/**'
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Check Submission Status
+        run: |
+          # Read status from config using grep (simple & fast)
+          STATUS=$(grep "accepting_submissions:" config/event.yml | awk '{print $2}')
+          
+          if [ "$STATUS" == "false" ]; then
+            echo "⛔️ SUBMISSIONS ARE CLOSED! ⛔️"
+            echo "The 'accepting_submissions' flag in config/event.yml is set to false."
+            echo "Please try again next year!"
+            exit 1
+          fi
+          echo "✅ Submissions are OPEN."
+
+      - name: Validate User Identity (One Person One Folder)
+        if: steps.files.outputs.has_files == 'true'
+        run: |
+          PR_USER="${{ github.actor }}"
+          FILES="${{ steps.files.outputs.files }}"
+          
+          echo "Verifying that $PR_USER is only touching their own folder..."
+          
+          for file in $FILES; do
+            # Extract the directory name: submissions/USERNAME/file -> USERNAME
+            # path is relative to repo root
+            TARGET_USER=$(echo "$file" | cut -d'/' -f2)
+            
+            # Case-insensitive comparison
+            if [ "${TARGET_USER,,}" != "${PR_USER,,}" ]; then
+              echo "❌ ERROR: Identity Mismatch!"
+              echo "You are logged in as '$PR_USER', but you are trying to submit to '$TARGET_USER'."
+              echo "Rule: You must create a folder named exactly after your GitHub username."
+              echo "Expected path: submissions/$PR_USER/..."
+              exit 1
+            fi
+          done
+          echo "✅ Identity Verified: Folder matches GitHub ID."
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Identify Changed Files
+        id: files
+        run: |
+          # 找出這一次 PR 新增或修改的程式碼檔案
+          # 使用 git diff 找出 submissions/ 下的變更
+          git fetch origin main
+          CHANGED_FILES=$(git diff --name-only origin/main HEAD | grep '^submissions/' | grep -E '\.(py|js|go|rb|sh)$' || true)
+          
+          if [ -z "$CHANGED_FILES" ]; then
+            echo "No submission files detected."
+            echo "has_files=false" >> $GITHUB_OUTPUT
+          else
+            echo "Detected files: $CHANGED_FILES"
+            echo "files=$CHANGED_FILES" >> $GITHUB_OUTPUT
+            echo "has_files=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run Safety Check & Verification
+        if: steps.files.outputs.has_files == 'true'
+        run: |
+          # 針對每一個變更的檔案執行 runner
+          FILES="${{ steps.files.outputs.files }}"
+          
+          for file in $FILES; do
+            echo "---------------------------------------------------"
+            echo "Testing Submission: $file"
+            echo "---------------------------------------------------"
+            
+            # 1. 執行 Runner (會用 Docker 跑)
+            # 注意：Github Actions 的 runner user 通常可以執行 docker
+            python3 core/runner.py "$file" > output.txt
+            
+            # 讀取執行結果 (Runner 會把 Output 印在 stdout，我們這裡為了簡單先假設 runner.py 的 output 格式)
+            # 實際上我們需要把 runner.py 的 stdout 擷取出來
+            
+            cat output.txt
+            
+            # 2. 驗證 Output 是否像聖誕樹
+            # 這裡我們只把 runner 的輸出部分 pipe 給 validator
+            # (這部分實作稍微簡化，假設 output.txt 包含完整樹的圖案)
+             cat output.txt | python3 challenges/2025-tree/validator.py
+          done

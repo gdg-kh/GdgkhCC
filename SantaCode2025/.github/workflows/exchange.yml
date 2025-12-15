@@ -1,0 +1,49 @@
+name: Gift Exchange (Admin Only)
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm_exchange:
+        description: 'Type "MERRY CHRISTMAS" to confirm exchange'
+        required: true
+
+jobs:
+  exchange:
+    runs-on: ubuntu-latest
+    if: github.event.inputs.confirm_exchange == 'MERRY CHRISTMAS'
+    timeout-minutes: 60  # Ensure enough time for 100+ sequential executions
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Pre-pull Docker Images
+        run: |
+          echo "Pre-warming Docker cache..."
+          # Pulling largest images first
+          docker pull swift:5.8-slim &
+          docker pull rust:slim &
+          docker pull gcc:12 &
+          docker pull openjdk:17-jdk-slim &
+          docker pull mono:6.12 &
+          docker pull zenika/kotlin:1.8 &
+          docker pull python:3.10-slim &
+          docker pull node:18-alpine &
+          docker pull golang:1.20-alpine &
+          docker pull ruby:3.2-alpine &
+          wait
+          echo "All images prepared!"
+
+      - name: Run Exchange Logic
+        run: |
+          echo "Starting the Great SantaCode Exchange..."
+          python3 core/exchange.py
+          
+      - name: Upload Match Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: secret-santa-matches-report
+          path: match_report.csv
